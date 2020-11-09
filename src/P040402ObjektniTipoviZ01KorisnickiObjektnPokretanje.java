@@ -18,10 +18,10 @@ class PokretanjeObjektniTip {
 
         // ovo je referentni (objektni) tip koji nije ugrađen u Javi, već smo ga mi
         // definisali
-        ObjektniTip objektniTip = new ObjektniTip();
-        objektniTip.vrednost = 4; // putem tačka notacije, može se pristupiti unutrašnjoj promenljivoj koja se
-                                  // zove vrednost
-        System.out.println(objektniTip.vrednost);
+        ObjektniTip objekat = new ObjektniTip();
+        objekat.vrednost = 4; // putem tačka notacije, može se pristupiti
+                              // unutrašnjoj promenljivoj koja sezove vrednost
+        System.out.println(objekat.vrednost);
 
     }
 }
