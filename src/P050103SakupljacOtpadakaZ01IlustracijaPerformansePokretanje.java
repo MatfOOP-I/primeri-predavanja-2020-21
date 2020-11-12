@@ -6,7 +6,7 @@ class PokretanjeSakupljacOtpadaka {
         double s = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                Object o = new Object();
+                CeoBroj4 o = new CeoBroj4(5);
                 s++;
             }
         }
@@ -20,7 +20,7 @@ class PokretanjeSakupljacOtpadaka {
         s = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                Object o = new Object();
+                CeoBroj4 o = new CeoBroj4(5);
                 s++;
             }
             System.gc();

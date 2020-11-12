@@ -1,5 +1,6 @@
 public class P050403OmotacPokrenitZarezZ02DoublePokretanje {
    public static void main(String[] args) {
+
       Double brojPokretniZarez1 = 42.0;
       Double brojPokretniZarez2 = Double.parseDouble("42");
       Double brojPokretniZarez3 = Double.parseDouble("42e10");
@@ -19,34 +20,34 @@ public class P050403OmotacPokrenitZarezZ02DoublePokretanje {
 
       int poredjenje = brojPokretniZarez1.compareTo(brojPokretniZarez2);
       if (poredjenje > 0)
-         System.out.printf("brojPokretniZarez1('%s') > brojPokretniZarez1('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez2);
+         System.out.printf("brojPokretniZarez1('%s') > brojPokretniZarez1('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez2);
       else if (poredjenje < 0)
-         System.out.printf("brojPokretniZarez1('%s') < brojPokretniZarez2('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez2);
+         System.out.printf("brojPokretniZarez1('%s') < brojPokretniZarez2('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez2);
       else
-         System.out.printf("brojPokretniZarez1('%s') == brojPokretniZarez2('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez2);
+         System.out.printf("brojPokretniZarez1('%s') == brojPokretniZarez2('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez2);
       poredjenje = brojPokretniZarez1.compareTo(brojPokretniZarez3);
       if (poredjenje > 0)
-         System.out.printf("brojPokretniZarez1('%s') > brojPokretniZarez3('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez1('%s') > brojPokretniZarez3('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez3);
       else if (poredjenje < 0)
-         System.out.printf("brojPokretniZarez1('%s') < brojPokretniZarez3('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez1('%s') < brojPokretniZarez3('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez3);
       else
-         System.out.printf("brojPokretniZarez1('%s') == brojPokretniZarez3('%s')\n",
-               brojPokretniZarez1, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez1('%s') == brojPokretniZarez3('%s')\n", brojPokretniZarez1,
+               brojPokretniZarez3);
       poredjenje = brojPokretniZarez2.compareTo(brojPokretniZarez3);
       if (poredjenje > 0)
-         System.out.printf("brojPokretniZarez2('%s') > brojPokretniZarez3('%s')\n",
-               brojPokretniZarez2, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez2('%s') > brojPokretniZarez3('%s')\n", brojPokretniZarez2,
+               brojPokretniZarez3);
       else if (poredjenje < 0)
-         System.out.printf("brojPokretniZarez2('%s') < brojPokretniZarez3('%s')\n",
-               brojPokretniZarez2, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez2('%s') < brojPokretniZarez3('%s')\n", brojPokretniZarez2,
+               brojPokretniZarez3);
       else
-         System.out.printf("brojPokretniZarez2('%s') == brojPokretniZarez3('%s')\n",
-               brojPokretniZarez2, brojPokretniZarez3);
+         System.out.printf("brojPokretniZarez2('%s') == brojPokretniZarez3('%s')\n", brojPokretniZarez2,
+               brojPokretniZarez3);
 
       System.out.printf("\nbrojPokretniZarez1 hashCode(): %d\n", brojPokretniZarez1.hashCode());
       System.out.printf("brojPokretniZarez2 hashCode(): %d\n", brojPokretniZarez2.hashCode());
@@ -66,16 +67,13 @@ public class P050403OmotacPokrenitZarezZ02DoublePokretanje {
 
       double min = Double.min(brojPokretniZarez1.doubleValue(), brojPokretniZarez2);
       min = Double.min(min, broj1);
-      System.out.printf("\nminimum brojeva %f, %f i %f: %f\n",
-            brojPokretniZarez1, brojPokretniZarez2, broj1, min);
+      System.out.printf("\nminimum brojeva %f, %f i %f: %f\n", brojPokretniZarez1, brojPokretniZarez2, broj1, min);
       double max = Double.max(brojPokretniZarez1.floatValue(), brojPokretniZarez2);
       max = Double.max(max, broj1);
-      System.out.printf("maksimum brojeva %f, %f i %f: %f\n",
-            brojPokretniZarez1, brojPokretniZarez2, broj1, max);
+      System.out.printf("maksimum brojeva %f, %f i %f: %f\n", brojPokretniZarez1, brojPokretniZarez2, broj1, max);
       Double sum = Double.sum(brojPokretniZarez1.floatValue(), brojPokretniZarez2);
       sum = Double.sum(sum, broj1);
-      System.out.printf("suma brojeva %s, %f i %f: %f\n",
-            brojPokretniZarez1, brojPokretniZarez2, broj1, sum);
+      System.out.printf("suma brojeva %s, %f i %f: %f\n", brojPokretniZarez1, brojPokretniZarez2, broj1, sum);
    }
 
 }

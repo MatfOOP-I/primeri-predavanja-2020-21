@@ -12,9 +12,14 @@ class PokretanjeForStepenovanjel {
     public static void main(String[] args) {
         int n = 10;
         double x = 2;
+        double stepen = stepenovanje(n, x);
+        System.out.println(x + "^" + n + "=" + stepen);
+    }
+
+    private static double stepenovanje(int n, double x) {
         double stepen = 1;
         for (int i = 1; i <= n; i++)
             stepen *= x;
-        System.out.println(x + "^" + n + "=" + stepen);
+        return stepen;
     }
 }

@@ -2,7 +2,7 @@ public class P050402OmotacZnakaZ01CharacterPokretanje {
    public static void main(String[] args) {
       Character znak1 = '*';
       Character znak2 = 42;
-      Character znak3 = Character.forDigit(11, 16);
+      Character znak3 = Character.forDigit(15, 16);
 
       System.out.printf("znak1: %s\n", znak1);
       System.out.printf("znak2: %s\n", znak2);
@@ -13,7 +13,6 @@ public class P050402OmotacZnakaZ01CharacterPokretanje {
       System.out.printf("znak2 hashCode() - char: %c\n", znak1.hashCode());
       System.out.printf("znak2 hashCode(): %d\n", znak2.hashCode());
       System.out.printf("znak3 hashCode(): %d\n\n", znak3.hashCode());
-
 
       if (znak1.equals(znak2))
          System.out.printf("prva dva znaka su jednaki (equals)\n");

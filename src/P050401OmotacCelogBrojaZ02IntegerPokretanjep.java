@@ -2,7 +2,7 @@ class PokretanjeOmotacIntegerMetodi {
    public static void main(String[] args) {
       Integer ceoBroj1 = Integer.valueOf("42");
       Integer ceoBroj2 = Integer.parseInt("2600");
-      Integer ceoBroj3 = Integer.parseInt("2A", 16);
+      Integer ceoBroj3 = Integer.parseInt("2b", 25);
 
       System.out.printf("ceoBroj1: %s\n", ceoBroj1);
       System.out.printf("ceoBroj2: %s\n", ceoBroj2);

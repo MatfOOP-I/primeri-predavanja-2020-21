@@ -43,12 +43,12 @@ class ForBreakContinue {
 
     static void UgnjezdeniForBreakSpoljasnja() {
         int znak = 1;
-        kraj: for (int i = 0; i < 5; i++) {
+        spoljasnja: for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 int z = znak * (i + j);
                 znak = -znak;
                 if (z > 4)
-                    break kraj;
+                    break spoljasnja;
                 System.out.print("\t" + z);
             }
             System.out.println();
@@ -77,6 +77,9 @@ class ForBreakContinue {
 
         System.out.println("---");
         UgnjezdeniForBreakUnutrasnja();
+
+        System.out.println("---");
+        UgnjezdeniForContinueSpoljasnja();
 
     }
 

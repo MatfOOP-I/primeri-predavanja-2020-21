@@ -2,7 +2,7 @@ class PokretanjeOmotacIntegerKreiranjePoredjenje {
 
    public static void main(String[] args) {
       Integer ceoBroj1 = new Integer(42);
-      Integer ceoBroj2 = 42; //skraćeni zapis, autoboxing
+      Integer ceoBroj2 = 42; // skraćeni zapis, autoboxing
 
       String niskaZaceoBroj1 = ceoBroj1.toString();
       System.out.printf("niska reprezentacija za ceoBroj1: %s\n", niskaZaceoBroj1);
@@ -34,5 +34,3 @@ class PokretanjeOmotacIntegerKreiranjePoredjenje {
          System.out.printf("ceoBroj1 nije primerak klase Object\n");
    }
 }
-
-

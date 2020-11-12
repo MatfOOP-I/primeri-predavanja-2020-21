@@ -20,22 +20,34 @@ class PokretanjeForContinueStepeniRedExp {
       double x = 1.00001;
       int brojSabiraka = 300;
       double epsilon = 1e-7;
+      double suma = sumiraj(x, brojSabiraka, epsilon);
+      System.out.println("Aproksimacija za exp(" + x + ")=" + suma);
+   }
+
+   private static double sumiraj(double x, int brojSabiraka, double epsilon) {
       double suma = 1;
       for (int n = 1;; n++) {
-         double stepen = 1;
-         for (int i = 1; i <= n; i++)
-            stepen *= x;
-         double faktorijel = 1;
-         for (int i = 1; i <= n; i++)
-            faktorijel *= i;
-         double sabirak = stepen / faktorijel;
+         double sabirak = stepenovanje(x, n) / fakt(n);
          if (n > brojSabiraka)
             break;
          if (sabirak < epsilon)
             continue;
          suma += sabirak;
       }
-      System.out.println(
-               "Aproksimacija za exp(" + x + ")=" + suma);
+      return suma;
+   }
+
+   private static double fakt(int n) {
+      double faktorijel = 1;
+      for (int i = 1; i <= n; i++)
+         faktorijel *= i;
+      return faktorijel;
+   }
+
+   private static double stepenovanje(double x, int n) {
+      double stepen = 1;
+      for (int i = 1; i <= n; i++)
+         stepen *= x;
+      return stepen;
    }
 }

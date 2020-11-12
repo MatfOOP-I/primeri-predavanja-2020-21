@@ -6,12 +6,16 @@
  * датотеке која у себи садржи методу main.
  */
 
-class CeoBroj2 {
+class CeoBroj4 {
     // вредност датог целог броја
     int vrednostBroja;
 
     // конструктор
-    CeoBroj2(int vrednost) {
+    CeoBroj4() {
+    }
+
+    // конструктор
+    CeoBroj4(int vrednost) {
 
         vrednostBroja = vrednost;
     }
@@ -23,31 +27,31 @@ class CeoBroj2 {
     }
 
     // одређивање НЗД датог броја и другог целог броја
-    CeoBroj2 promeniZnak() {
-        return new CeoBroj2(-vrednostBroja);
+    CeoBroj4 promeniZnak() {
+        return new CeoBroj4(-vrednostBroja);
     }
 
-    CeoBroj2 saberi(CeoBroj2 sabirak) {
-        return new CeoBroj2(vrednostBroja + sabirak.vrednostBroja);
+    CeoBroj4 saberi(CeoBroj4 sabirak) {
+        return new CeoBroj4(vrednostBroja + sabirak.vrednostBroja);
     }
 
-    CeoBroj2 oduzmi(CeoBroj2 umanjilac) {
-        return new CeoBroj2(vrednostBroja - umanjilac.vrednostBroja);
+    CeoBroj4 oduzmi(CeoBroj4 umanjilac) {
+        return new CeoBroj4(vrednostBroja - umanjilac.vrednostBroja);
     }
 
-    boolean jednak(CeoBroj2 drugi) {
+    boolean jednak(CeoBroj4 drugi) {
         return vrednostBroja == drugi.vrednostBroja;
     }
 
-    boolean manji(CeoBroj2 drugi) {
+    boolean manji(CeoBroj4 drugi) {
         return vrednostBroja < drugi.vrednostBroja;
     }
 
-    boolean manjiIliJednak(CeoBroj2 drugi) {
+    boolean manjiIliJednak(CeoBroj4 drugi) {
         return manji(drugi) || jednak(drugi);
     }
 
-    boolean veci(CeoBroj2 drugi) {
+    boolean veci(CeoBroj4 drugi) {
         return !manjiIliJednak(drugi);
     }
 
@@ -57,27 +61,30 @@ class PokretanjeCeoBroj2 {
     // улазна тачка програма
     public static void main(String[] args) {
 
-        System.out.println("---");
-        int a = 1;
-        int b = 4_200_000;
-        int s = 0;
-        while (a <= b) {
-            s += a;
-            a++;
-        }
-        System.out.println(s);
+        CeoBroj4 cb = new CeoBroj4();
+        System.out.println(cb.vrednostBroja);
 
-        System.out.println("---");
+        // System.out.println("---");
+        // int a = 1;
+        // int b = 4_200_000;
+        // int s = 0;
+        // while (a <= b) {
+        // s += a;
+        // a++;
+        // }
+        // System.out.println(s);
 
-        CeoBroj2 broj1 = new CeoBroj2(1);
-        CeoBroj2 aa = new CeoBroj2(1);
-        CeoBroj2 bb = new CeoBroj2(b);
-        CeoBroj2 ss = new CeoBroj2(0);
-        while (aa.manjiIliJednak(bb)) {
-            ss = ss.saberi(aa);
-            aa = aa.saberi(broj1);
-        }
-        ss.prikaz();
+        // System.out.println("---");
+
+        // CeoBroj2 broj1 = new CeoBroj2(1);
+        // CeoBroj2 aa = new CeoBroj2(1);
+        // CeoBroj2 bb = new CeoBroj2(b);
+        // CeoBroj2 ss = new CeoBroj2(0);
+        // while (aa.manjiIliJednak(bb)) {
+        // ss = ss.saberi(aa);
+        // aa = aa.saberi(broj1);
+        // }
+        // ss.prikaz();
 
     }
 

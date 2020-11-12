@@ -1,6 +1,6 @@
 public class P050304NiskeiZ01ImutabilnostiPokretanje {
    public static void main(String[] args) {
-      int duzina = 20_000;
+      int duzina = 5_000;
 
       long pocetak = System.nanoTime();
       String velikaNiska = "";
@@ -8,8 +8,10 @@ public class P050304NiskeiZ01ImutabilnostiPokretanje {
          String parce = "A";
          velikaNiska += parce;
       }
-      double trajanje = (System.nanoTime() - pocetak)/1e9;
-      System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje, velikaNiska);
+      double trajanje = (System.nanoTime() - pocetak) / 1e9;
+      System.out.printf("Za %f sekundi.\n", trajanje);
+      // System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje,
+      // velikaNiska);
 
       pocetak = System.nanoTime();
       StringBuilder graditeljNiske = new StringBuilder();
@@ -18,8 +20,10 @@ public class P050304NiskeiZ01ImutabilnostiPokretanje {
          graditeljNiske.append(parce);
       }
       velikaNiska = graditeljNiske.toString();
-      trajanje = (System.nanoTime() - pocetak)/1e9;
-      System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje, velikaNiska);
+      trajanje = (System.nanoTime() - pocetak) / 1e9;
+      System.out.printf("Za %f sekundi.\n", trajanje);
+      // System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje,
+      // velikaNiska);
 
       pocetak = System.nanoTime();
       graditeljNiske = new StringBuilder();
@@ -28,7 +32,9 @@ public class P050304NiskeiZ01ImutabilnostiPokretanje {
          graditeljNiske.append(parce);
       }
       velikaNiska = graditeljNiske.toString();
-      trajanje = (System.nanoTime() - pocetak)/1e9;
-      System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje, velikaNiska);
+      trajanje = (System.nanoTime() - pocetak) / 1e9;
+      System.out.printf("Za %f sekundi.\n", trajanje);
+      // System.out.printf("Za %f sekundi je napravlenja niska \n %s \n\n", trajanje,
+      // velikaNiska);
    }
 }

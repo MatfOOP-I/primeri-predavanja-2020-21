@@ -20,21 +20,28 @@ class PokretanjeForBreakStepeniRedExp {
         int brojSabiraka = 300;
         double epsilon = 1e-7;
         double suma = 1;
-        for (int n = 1; ; n++) {
-            double stepen = 1;
-            for (int i = 1; i <= n; i++)
-                stepen *= x;
-            double faktorijel = 1;
-            for (int i = 1; i <= n; i++)
-                faktorijel *= i;
-            double sabirak = stepen / faktorijel;
+        for (int n = 1;; n++) {
+            double sabirak = stepenuj(x, n) / fakt(n);
             if (n > brojSabiraka)
                 break;
             if (sabirak < epsilon)
                 break;
             suma += sabirak;
         }
-        System.out.println(
-                "Aproksimacija za exp(" + x + ")=" + suma);
+        System.out.println("Aproksimacija za exp(" + x + ")=" + suma);
+    }
+
+    private static double fakt(int n) {
+        double faktorijel = 1;
+        for (int i = 1; i <= n; i++)
+            faktorijel *= i;
+        return faktorijel;
+    }
+
+    private static double stepenuj(double x, int n) {
+        double stepen = 1;
+        for (int i = 1; i <= n; i++)
+            stepen *= x;
+        return stepen;
     }
 }
