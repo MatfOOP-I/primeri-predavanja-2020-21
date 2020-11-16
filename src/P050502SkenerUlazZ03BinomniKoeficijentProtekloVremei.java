@@ -20,6 +20,15 @@ public class P050502SkenerUlazZ03BinomniKoeficijentProtekloVremei {
 
    static int bkMnozenje(int n, int k) {
       long rez = 1;
+      for (int i = k + 1; i <= n; i++)
+         rez *= i;
+      for (int i = 1; i <= n - k; i++)
+         rez /= i;
+      return (int) rez;
+   }
+
+   static int bkMnozenje2(int n, int k) {
+      long rez = 1;
       if (k > n - k) {
          for (int i = k + 1; i <= n; i++)
             rez *= i;
