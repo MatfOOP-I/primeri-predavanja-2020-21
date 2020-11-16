@@ -7,7 +7,7 @@ public class P050502SkenerUlazZ01FaktorijelPokretanje {
    }
 
    public static void main(String[] args) {
-      System.out.printf("Unesite broj:\n");
+      System.out.printf("Unesite broj:%n");
       java.util.Scanner skener = new java.util.Scanner(System.in);
       int n = skener.nextInt();
       skener.close();
