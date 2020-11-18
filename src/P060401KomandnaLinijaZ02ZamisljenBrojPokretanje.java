@@ -15,7 +15,7 @@
 // Задатак илуструје рад са псеудослучајним бројевима, као и рад са аргументима
 // командне линије
 
-public class P050601MatematikaZ04ZamisljeniBrojPokretanje {
+public class P060401KomandnaLinijaZ02ZamisljenBrojPokretanje {
 
    static int zamisli(int a, int b, int metod) {
       switch (metod) {

@@ -16,7 +16,7 @@ class PokretanjeJednodimenzionalniNizFrekfencijeMonolitno {
    public static void main(String[] args) {
       int[] rezultati =
             {1, 7, 3, 4, 9, 7, 6, 3, 3, 10, 5, 6, 8, 8, 8, 4, 3, 3, 3, 2, 5, 7,
-                  9, 1, 10, 2, 2, 2, 2, 2, 8, 11, 11 };
+                  9, 1, 10, 2, 2, 2, 2, 2, 8, 11, 11, 7, 7, 7, 8, 7, 7 };
       System.out.println("Niz brojeva:");
       for (int x : rezultati)
          System.out.printf("%4d", x);

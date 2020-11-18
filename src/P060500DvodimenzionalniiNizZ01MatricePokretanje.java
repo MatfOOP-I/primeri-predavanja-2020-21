@@ -1,12 +1,11 @@
 /*
-  
+
 Написати Јава програм који омогућује да се, коришћењем дводимензионалног низа, реализују
 основне операције над матрицама (сабирање, одузимање, множење и израчунавање детерминанте).
- 
+
  */
 
 // Програм илуструје рад са дводимензионалним низовима и реализацију рекурзије.
-
 
 class PokretanjeDvodimenzionalniiNizMatrice {
 
@@ -76,7 +75,8 @@ class PokretanjeDvodimenzionalniiNizMatrice {
       for (int i = 0; i < a.length; i++)
          if (a[i].length != b[i].length)
             return null;
-      if (nijeMatrica(a)) return null;
+      if (nijeMatrica(a))
+         return null;
       double[][] c = new double[a.length][a[0].length];
       for (int i = 0; i < c.length; i++)
          for (int j = 0; j < c[i].length; j++)
@@ -104,7 +104,7 @@ class PokretanjeDvodimenzionalniiNizMatrice {
    }
 
    static double[][] transponuj(double[][] a) {
-      if( a== null)
+      if (a == null)
          return null;
       if (nijeMatrica(a))
          return null;
@@ -116,9 +116,9 @@ class PokretanjeDvodimenzionalniiNizMatrice {
    }
 
    static boolean jeKvadratna(double[][] a) {
-      if( a==null)
+      if (a == null)
          return false;
-      if(nijeMatrica(a))
+      if (nijeMatrica(a))
          return false;
       for (int i = 0; i < a.length; i++)
          if (a.length != a[i].length)
@@ -160,7 +160,7 @@ class PokretanjeDvodimenzionalniiNizMatrice {
    }
 
    public static void main(String[] args) {
-      double[][] g = {{1.5, 2, 3}, {4, 5, 6}};
+      double[][] g = { { 1.5, 2, 3 }, { 4, 5, 6 } };
       System.out.println("G je: ");
       prikazi(g);
       prikazi2(g);
@@ -172,17 +172,18 @@ class PokretanjeDvodimenzionalniiNizMatrice {
       System.out.println("promenjeno H je: ");
       prikazi2(h);
 
-      double[][] a = {{1.5, 2, 3}, {4, 5, 6}};
+      double[][] a = { { 1.5, 2, 3 }, { 4, 5, 6 } };
       System.out.println("A je: ");
       prikazi2(a);
-      double[][] b = {{2, 3, 4}, {5, 6.6, 7}};
+      double[][] b = { { 2, 3, 4 }, { 5, 6.6, 7 } };
       System.out.println("B je: ");
       prikazi(b);
       System.out.println("A+B je: ");
       prikazi2(saberi(a, b));
       System.out.println("A-B je: ");
       prikazi2(oduzmi(a, b));
-      double[][] c = {{2, 1.5}, {3, 0}, {-1.5, 1}};
+
+      double[][] c = { { 2, 1.5 }, { 3, 0 }, { -1.5, 1 } };
       System.out.println("C je: ");
       prikazi(c);
       System.out.println("A*C je: ");

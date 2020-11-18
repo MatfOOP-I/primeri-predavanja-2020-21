@@ -1,8 +1,8 @@
 /*
-  
+
 Написати Јава програм који омогућује да се секвенца реалних бројева
 прикаже у обрнутом редоследу.
- 
+
  */
 
 // Програм илуструје реализацију стека  преко глобалних променљивих. 
@@ -19,7 +19,7 @@ class PokretanjeJednodimenzionalniNizOkretanjePrekoSteka {
 
    static void push(double elem) {
       if (vrhSteka == stek.length - 1) {
-         System.err.println("Greska PUSH: StekNiski je pun!");
+         System.err.println("Greska PUSH: Stek double vrednosti je pun!");
          return;
       }
       stek[++vrhSteka] = elem;
@@ -27,7 +27,7 @@ class PokretanjeJednodimenzionalniNizOkretanjePrekoSteka {
 
    static double pop() {
       if (vrhSteka == -1) {
-         System.err.println("Greska POP: StekNiski je prazan!");
+         System.err.println("Greska POP: Stek double vrednosti je prazan!");
          return -1;
       }
       return stek[vrhSteka--];
@@ -38,18 +38,15 @@ class PokretanjeJednodimenzionalniNizOkretanjePrekoSteka {
    }
 
    public static void main(String[] args) {
-      double[] sekvenca =
-            {13.4, 7.4, 6.3, 3.2, 8};
-      System.out.println("Sekvenca");
-      for (int i = 0; i < sekvenca.length; i++)
-         System.out.printf("%10.4f", sekvenca[i]);
-      initStek(sekvenca.length);
-      int i = 0;
-      while (i < sekvenca.length) {
-         double x = sekvenca[i];
+      String sekvenca = "13.4  7.4 6.3  3.2 8 42 33.2";
+      System.out.printf("Sekvenca: %s", sekvenca);
+      initStek(60);
+      java.util.Scanner sc = new java.util.Scanner(sekvenca);
+      while (sc.hasNext()) {
+         double x = sc.nextDouble();
          push(x);
-         i++;
       }
+      sc.close();
       System.out.println("\nObrnuta sekvenca");
       while (brojElemenata() > 0)
          System.out.printf("%10.4f", pop());

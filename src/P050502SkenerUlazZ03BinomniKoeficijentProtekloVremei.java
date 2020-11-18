@@ -55,13 +55,13 @@ public class P050502SkenerUlazZ03BinomniKoeficijentProtekloVremei {
       long vremePocetka = System.nanoTime();
       int rez = bkMnozenje(n, k);
       double trajanje = (System.nanoTime() - vremePocetka) / 1e6;
-      System.out.printf("\nMnozenjem i deljenjem dobijen je\n");
-      System.out.printf("rezultat %d, za vreme %10.4f msec\n", rez, trajanje);
+      System.out.printf("%nMnozenjem i deljenjem dobijen je%n");
+      System.out.printf("rezultat %d, za vreme %10.4f msec%n", rez, trajanje);
 
       vremePocetka = System.nanoTime();
       rez = bkRekurzija(n, k);
       trajanje = (System.nanoTime() - vremePocetka) / 1e6;
-      System.out.printf("Cisto rekurzivnim putem dobijen je\n");
-      System.out.printf("rezultat %d, za vreme je %10.4f msec\n", rez, trajanje);
+      System.out.printf("Cisto rekurzivnim putem dobijen je%n");
+      System.out.printf("rezultat %d, za vreme je %10.4f msec%n", rez, trajanje);
    }
 }

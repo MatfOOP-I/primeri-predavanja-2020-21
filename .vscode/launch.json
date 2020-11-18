@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - P060401KomandnaLinijaZ02ZamisljenBrojPokretanje",
+            "request": "launch",
+            "mainClass": "P060401KomandnaLinijaZ02ZamisljenBrojPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PokretanjeNiz",
+            "request": "launch",
+            "mainClass": "PokretanjeNiz",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
