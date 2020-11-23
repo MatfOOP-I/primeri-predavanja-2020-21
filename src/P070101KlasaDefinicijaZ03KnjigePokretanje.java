@@ -21,9 +21,8 @@ public class P070101KlasaDefinicijaZ03KnjigePokretanje {
       k2.brojStranica = sc.nextInt();
       sc.close();
 
-      System.out.printf( "Knjiga: %s\n", k2);
-      System.out.printf( "Knjiga: [%s: %s, %d, %d str.]\n",
-            k2.autor, k2.naslov, k2.godinaIzdavanja, k2.brojStranica);
+      System.out.printf("Knjiga: %s\n", k2);
+      System.out.printf("Knjiga: [%s: %s, %d, %d str.]\n", k2.autor, k2.naslov, k2.godinaIzdavanja, k2.brojStranica);
 
    }
 }

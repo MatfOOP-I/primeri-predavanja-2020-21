@@ -1,5 +1,5 @@
 /*
- 
+
 Написати Јава програм који омогућује да се, коришћењем дводимензионалног низа, реализује
 приказ Паскаловог троугла.
 
@@ -7,7 +7,7 @@
 1) множењем
 2) рекурзивним путем и
 3) коришћењем концепта динамичког програмирања.
- 
+
  */
 
 class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
@@ -16,13 +16,13 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
    static long[][] koeficijenti;
 
    static int bkMnozenje(int n, int k) {
-      int rez = 1;
+      long rez = 1;
       if (k > n - k) {
          for (int i = k + 1; i <= n; i++)
             rez *= i;
          for (int i = 1; i <= n - k; i++)
             rez /= i;
-         return rez;
+         return (int) rez;
       } else {
          for (int i = n - k + 1; i <= n; i++)
             rez *= i;
@@ -52,61 +52,56 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
    }
 
    public static void main(String[] args) {
-      System.out.println("Unesi dimenziju Paskalovog trougla: "); //15 30
+      System.out.println("Unesi dimenziju Paskalovog trougla: "); // 15 30
       java.util.Scanner skener = new java.util.Scanner(System.in);
       int brojVrsta = skener.nextInt();
       skener.close();
 
       // racunanje mnozenjem
       long vremePocetka = System.nanoTime();
-      koeficijenti = new long[brojVrsta + 1][];
-      for (int n = 0; n <= brojVrsta; n++)
-         koeficijenti[n] = new long[n + 1];
+      initKoeficijenti(brojVrsta);
       for (int n = 0; n < koeficijenti.length; n++)
          for (int k = 0; k < koeficijenti[n].length; k++)
             koeficijenti[n][k] = bkMnozenje(n, k);
-      for (long[] vrsta : koeficijenti) {
-         for (long elem : vrsta)
-            System.out.printf("%15d", elem);
-         System.out.println();
-      }
-      double trajanje = (System.nanoTime()-vremePocetka)/1e9;
-      System.out.println("Izracunavanje  mnozenjem je trajalo " + trajanje + " sekundi.");
+      prikazKoeficijenti();
+      double trajanje = (System.nanoTime() - vremePocetka) / 1e9;
+      System.out.printf("Izracunavanje  mnozenjem je trajalo %f sekundi.", trajanje );
 
       // racunanje rekurzivno
       vremePocetka = System.nanoTime();
-      koeficijenti = new long [brojVrsta + 1][];
-      for (int n = 0; n <= brojVrsta; n++)
-         koeficijenti[n] = new long [n + 1];
+      initKoeficijenti(brojVrsta);
       for (int n = 0; n < koeficijenti.length; n++)
          for (int k = 0; k < koeficijenti[n].length; k++)
             koeficijenti[n][k] = bkRekurzija(n, k);
-      for (long[] vrsta : koeficijenti) {
-         for (long elem : vrsta)
-            System.out.printf("%15d", elem);
-         System.out.println();
-      }
-      trajanje = (System.nanoTime()-vremePocetka)/1e9;
+      prikazKoeficijenti();
+      trajanje = (System.nanoTime() - vremePocetka) / 1e9;
       System.out.println("Izracunavanje rekurzijom je trajalo " + trajanje + " sekundi.");
-
 
       // racunanje dinamicki
       vremePocetka = System.nanoTime();
-      koeficijenti = new long[brojVrsta + 1][];
-      for (int n = 0; n <= brojVrsta; n++)
-         koeficijenti[n] = new long[n + 1];
+      initKoeficijenti(brojVrsta);
       for (int i = 0; i < koeficijenti.length; i++)
          for (int j = 0; j < koeficijenti[i].length; j++)
             koeficijenti[i][j] = -1;
       for (int n = 0; n < koeficijenti.length; n++)
          for (int k = 0; k < koeficijenti[n].length; k++)
             koeficijenti[n][k] = bkDimanicko(n, k);
+      prikazKoeficijenti();
+      trajanje = (System.nanoTime() - vremePocetka) / 1e9;
+      System.out.println("Izracunavanje dinamickom programiranjem je trajalo " + trajanje + " sekundi.");
+   }
+
+   private static void prikazKoeficijenti() {
       for (long[] vrsta : koeficijenti) {
          for (long elem : vrsta)
             System.out.printf("%15d", elem);
          System.out.println();
       }
-      trajanje = (System.nanoTime()-vremePocetka)/1e9;
-      System.out.println("Izracunavanje dinamickom programiranjem je trajalo " + trajanje + " sekundi.");
+   }
+
+   private static void initKoeficijenti(int brojVrsta) {
+      koeficijenti = new long[brojVrsta + 1][];
+      for (int n = 0; n <= brojVrsta; n++)
+         koeficijenti[n] = new long[n + 1];
    }
 }

@@ -1,6 +1,7 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
-class PokretanjeDvodimenzionalniiNizSistemJednacina {
+class PokretanjeDvodimenzionalniiNizSistemJednacinaPopuni {
 
     static double[][] ucitajMatricuSistema(Scanner ulaz, int n) {
         System.out.println("Elementi matrice sistema su");
@@ -67,8 +68,7 @@ class PokretanjeDvodimenzionalniiNizSistemJednacina {
         int n = a.length;
         double[][] rezultat = new double[n][n];
         for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                rezultat[i][j] = a[i][j];
+            rezultat[i] = Arrays.copyOf(a[i],n);
         for (int i = 0; i < n; i++)
             rezultat[i][kolona] = b[i];
         return rezultat;
@@ -77,7 +77,7 @@ class PokretanjeDvodimenzionalniiNizSistemJednacina {
     private static void resiPrikazi(int n, double[][] a, double[] b) {
         double det = determinanta(a);
         if (det == 0) {
-            System.err.printf("Determinanta sistema je 0!!!");
+            System.err.printf("Determinanta sistema je 0!!!%n");
             return;
         }
         for (int j = 0; j < n; j++)

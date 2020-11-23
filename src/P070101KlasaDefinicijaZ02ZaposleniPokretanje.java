@@ -5,7 +5,7 @@ class Zaposleni {
 
 public class P070101KlasaDefinicijaZ02ZaposleniPokretanje {
     public static void main(String[] args) {
-       
+
         Zaposleni e = new Zaposleni();
         e.imePrezime = "Pripravnik Peca";
         e.plata = 750;
@@ -19,4 +19,3 @@ public class P070101KlasaDefinicijaZ02ZaposleniPokretanje {
         System.out.println("ime i prezime=" + e.imePrezime + ", plata=" + e.plata);
     }
 }
-
