@@ -17,12 +17,14 @@
 
 package rs.math.oop1.z070401.definicjeMetoda.z07.digitronPostfiksni;
 
+import java.util.Scanner;
+
 public class PokretanjeDigitronPostfiksni {
 
    public static void main(String[] args) {
       DigitronPostfiksni digitron = new DigitronPostfiksni();
       digitron.init();
-      java.util.Scanner skener = new java.util.Scanner(System.in);
+      Scanner skener = new Scanner(System.in);
       while (true) {
          System.out.println(
                   "Unesi izraz u postfiksnom obliku (kraj za zavrsetak)");

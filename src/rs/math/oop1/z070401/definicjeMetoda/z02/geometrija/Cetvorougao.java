@@ -7,8 +7,7 @@ class Cetvorougao {
    Tacka c;
    Tacka d;
 
-   void init(String o, Tacka t1, Tacka t2, Tacka t3,
-             Tacka t4) {
+   void init(String o, Tacka t1, Tacka t2, Tacka t3, Tacka t4) {
       oznaka = o;
       a = new Tacka();
       a.init(t1.oznaka, t1.x, t1.y);

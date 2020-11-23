@@ -57,9 +57,11 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
       int brojVrsta = skener.nextInt();
       skener.close();
 
+      initKoeficijenti(brojVrsta);
+      //prikazKoeficijenti();
+
       // racunanje mnozenjem
       long vremePocetka = System.nanoTime();
-      initKoeficijenti(brojVrsta);
       for (int n = 0; n < koeficijenti.length; n++)
          for (int k = 0; k < koeficijenti[n].length; k++)
             koeficijenti[n][k] = bkMnozenje(n, k);

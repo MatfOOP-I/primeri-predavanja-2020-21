@@ -28,13 +28,13 @@ public class PokretanjeGeometrija1 {
       a.prikaziSe(false);
       b.prikaziSe(false);
       ab.prikaziSe();
-      System.out.println();
+      System.out.println("---");
 
       b.y = -3;
       a.prikaziSe(false);
       b.prikaziSe(false);
       ab.prikaziSe();
-      System.out.println();
+      System.out.println("---");
 
    }
 

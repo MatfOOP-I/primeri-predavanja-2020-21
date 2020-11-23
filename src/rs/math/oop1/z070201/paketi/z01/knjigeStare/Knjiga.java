@@ -1,4 +1,4 @@
-package rs.math.oop1.z070201.paketi.z01.knjige;
+package rs.math.oop1.z070201.paketi.z01.knjigeStare;
 
 class Knjiga {
     int godinaIzdavanja;

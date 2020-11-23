@@ -2,7 +2,6 @@ package rs.math.oop1.z070201.paketi.z02.zaposleni;
 
 public class PokretanjeZaposleni {
 
-
     public static void main(String[] args) {
         java.util.Scanner sc = new java.util.Scanner("Pripravnik Peca/300/Talicni Tom/500");
         sc.useDelimiter("/");
@@ -26,4 +25,3 @@ public class PokretanjeZaposleni {
         System.out.println("ime i prezime=" + z2.imePrezime + ", plata=" + z2.plata);
     }
 }
-

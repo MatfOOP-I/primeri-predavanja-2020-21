@@ -10,6 +10,8 @@
 
 package rs.math.oop1.z070401.definicjeMetoda.z06.frekvencijeSaUlazaPrekoSteka;
 
+import java.util.Arrays;
+
 class StekCelihBrojeva {
 
    int[] elementi;
@@ -23,9 +25,7 @@ class StekCelihBrojeva {
    void push(int elem) {
       if (vrhSteka == elementi.length - 1) {
          int[] temp = elementi;
-         elementi = new int[2 * temp.length];
-         for (int i = 0; i < temp.length; i++)
-            elementi[i] = temp[i];
+         elementi = Arrays.copyOf(temp, 2 * temp.length);
       }
       elementi[++vrhSteka] = elem;
    }

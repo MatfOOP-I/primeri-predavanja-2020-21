@@ -1,6 +1,6 @@
 // Пример илуструје различите начине за декларисање променљивих.
 
-package rs.math.oop1.z070201.paketi.z01.knjige;
+package rs.math.oop1.z070201.paketi.z01.knjigeStare;
 
 public class PokretanjeKnjige {
 
@@ -18,8 +18,8 @@ public class PokretanjeKnjige {
       k2.brojStranica = sc.nextInt();
       sc.close();
 
-      System.out.printf( "Knjiga: %s\n", k2);
-      System.out.printf( "Knjiga: [%s: %s, %d, %d str.]\n",
+      System.out.printf( "Knjiga: %s%n", k2);
+      System.out.printf( "Knjiga: [%s: %s, %d, %d str.%n",
             k2.autor, k2.naslov, k2.godinaIzdavanja, k2.brojStranica);
 
    }

@@ -2,7 +2,7 @@ class PokretanjeArgumentiPromenljiveDuzinePrikaziPodeljene {
 
    static void prikaziPodeljene(int delilac, int... a) {
       for (int x : a)
-         System.out.print((double) x / delilac + " ");
+         System.out.printf( "%f ", (double) x / delilac);
       System.out.println();
    }
 

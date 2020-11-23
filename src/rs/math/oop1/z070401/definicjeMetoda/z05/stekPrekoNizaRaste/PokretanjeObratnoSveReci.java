@@ -18,6 +18,7 @@ Windows системе, односно <Ctrl>+d за Unix системе
 
 package rs.math.oop1.z070401.definicjeMetoda.z05.stekPrekoNizaRaste;
 
+import java.util.Scanner;
 
 public class PokretanjeObratnoSveReci {
 
@@ -26,7 +27,7 @@ public class PokretanjeObratnoSveReci {
                "Unesi tekst(<Ctrl>+d ili <Ctrl>+z za kraj):");
       StekNiski reci = new StekNiski();
       reci.init();
-      java.util.Scanner skener = new java.util.Scanner(System.in);
+      Scanner skener = new Scanner(System.in);
       while (skener.hasNext()) {
          String rec = skener.next();
          reci.push(rec);

@@ -5,7 +5,7 @@ package rs.math.oop1.z070401.definicjeMetoda.z01stekPrekoNizaFiksan;
 Класа за реализацију стека који садржи целе бројеве.
 
 Стек се реализује преко низа.
- 
+
  */
 
 class StekNiski {
@@ -20,7 +20,7 @@ class StekNiski {
 
    void push(String elem) {
       if (vrhSteka == elementi.length - 1) {
-         System.out.println("Greska PUSH: StekNiski je pun!");
+         System.err.println("Greska PUSH: StekNiski je pun!");
          return;
       }
       elementi[++vrhSteka] = elem;
@@ -28,7 +28,7 @@ class StekNiski {
 
    String pop() {
       if (vrhSteka == -1) {
-         System.out.println("Greska POP: StekNiski je prazan!");
+         System.err.println("Greska POP: StekNiski je prazan!");
          return "<nema>";
       }
       return elementi[vrhSteka--];

@@ -10,6 +10,8 @@
 
 package rs.math.oop1.z070401.definicjeMetoda.z05.stekPrekoNizaRaste;
 
+import java.util.Arrays;
+
 class StekNiski {
 
    String[] elementi;
@@ -23,9 +25,7 @@ class StekNiski {
    void push(String elem) {
       if (vrhSteka == elementi.length - 1) {
          String[] temp = elementi;
-         elementi = new String[2 * temp.length];
-         for (int i = 0; i < temp.length; i++)
-            elementi[i] = temp[i];
+         elementi = Arrays.copyOf(temp, 2 * temp.length);
       }
       elementi[++vrhSteka] = elem;
    }

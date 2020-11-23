@@ -81,7 +81,8 @@ class PokretanjeDvodimenzionalniiNizSistemJednacina {
             return;
         }
         for (int j = 0; j < n; j++)
-            System.out.printf("x_%-4d  = %f%n", (j + 1), determinanta(zameni(a, b, j)) / det);
+            System.out.printf("x_%-4d = %f%n", (j + 1), 
+                determinanta(zameni(a, b, j)) / det);
     }
 
     public static void main(String[] args) {

@@ -7,42 +7,36 @@ import java.util.Scanner;
  * Program realizuje računanje determinante za kvadratnu matricu.
  * 
  */
-public class PokretanjeSistemJednacina
-{
-	
-	static double[][] ucitajMatricuSistema( Scanner ulaz, int n )
-	{
-		System.out.println( "Elementi matrice sistema su" );
+public class PokretanjeSistemJednacina {
+
+	static double[][] ucitajMatricuSistema(Scanner ulaz, int n) {
+		System.out.println("Elementi matrice sistema su");
 		double mat[][] = new double[n][n];
 		for (int i = 0; i < n; i++)
 			for (int j = 0; j < n; j++)
 				mat[i][j] = ulaz.nextDouble();
 		return mat;
 	}
-	
-	static double[] ucitajSlobodneClanoveSistema( Scanner ulaz, int n )
-	{
-		System.out.println( "Elementi vektora slobodnih clanova su" );
+
+	static double[] ucitajSlobodneClanoveSistema(Scanner ulaz, int n) {
+		System.out.println("Elementi vektora slobodnih clanova su");
 		double mat[] = new double[n];
 		for (int i = 0; i < n; i++)
 			mat[i] = ulaz.nextDouble();
 		return mat;
 	}
-	
-	static void prikazi( double[][] a, double[] b )
-	{
-		System.out.println( "Elementi kvadratne matrice su" );
-		for (int i = 0; i < a.length; i++)
-		{
+
+	static void prikazi(double[][] a, double[] b) {
+		System.out.println("Elementi kvadratne matrice su");
+		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++)
-				System.out.printf( "%15.4f", a[i][j] );
-			System.out.printf( " - %15.4f", b[i] );
+				System.out.printf("%15.4f", a[i][j]);
+			System.out.printf(" - %15.4f", b[i]);
 			System.out.println();
 		}
 	}
-	
-	static double[][] iskljuci( double[][] a, int i, int j )
-	{
+
+	static double[][] iskljuci(double[][] a, int i, int j) {
 		int n = a.length;
 		double[][] mat = new double[n - 1][n - 1];
 		for (int ii = 0; ii < i; ii++)
@@ -59,9 +53,8 @@ public class PokretanjeSistemJednacina
 				mat[ii][jj] = a[ii + 1][jj + 1];
 		return mat;
 	}
-	
-	static double determinanta( double[][] a )
-	{
+
+	static double determinanta(double[][] a) {
 		int n = a.length;
 		if (n == 1)
 			return a[0][0];
@@ -69,17 +62,15 @@ public class PokretanjeSistemJednacina
 			return a[0][0] * a[1][1] - a[1][0] * a[0][1];
 		double det = 0;
 		double znak = 1;
-		for (int j = 0; j < n; j++)
-		{
-			double[][] aa = iskljuci( a, 0, j );
-			det += znak * a[0][j] * determinanta( aa );
+		for (int j = 0; j < n; j++) {
+			double[][] aa = iskljuci(a, 0, j);
+			det += znak * a[0][j] * determinanta(aa);
 			znak = -znak;
 		}
 		return det;
 	}
-	
-	public static double[][] zameni( double[][] a, double[] b, int kolona )
-	{
+
+	public static double[][] zameni(double[][] a, double[] b, int kolona) {
 		int n = a.length;
 		double[][] rezultat = new double[n][n];
 		for (int i = 0; i < n; i++)
@@ -89,25 +80,22 @@ public class PokretanjeSistemJednacina
 			rezultat[i][kolona] = b[i];
 		return rezultat;
 	}
-	
-	private static void resiPrikazi( int n, double[][] a, double[] b )
-	{
-		double det = determinanta( a );
+
+	private static void resiPrikazi(int n, double[][] a, double[] b) {
+		double det = determinanta(a);
 		for (int j = 0; j < n; j++)
-		  System.out.println( "x_" + (j + 1) + "=" 
-			    + determinanta( zameni( a, b, j ) ) / det );
+			System.out.println("x_" + (j + 1) + "=" + determinanta(zameni(a, b, j)) / det);
 	}
 
-	public static void main( String[] args )
-	{
-		Scanner ulaz = new Scanner( System.in );
-		System.out.println( "Dimenzija kvadratne matrice" );
+	public static void main(String[] args) {
+		Scanner ulaz = new Scanner(System.in);
+		System.out.println("Dimenzija kvadratne matrice");
 		int n = ulaz.nextInt();
-		double[][] a = ucitajMatricuSistema( ulaz, n );
-		double[] b = ucitajSlobodneClanoveSistema( ulaz, n );
-		prikazi( a, b );
-		resiPrikazi( n, a, b );
+		double[][] a = ucitajMatricuSistema(ulaz, n);
+		double[] b = ucitajSlobodneClanoveSistema(ulaz, n);
+		prikazi(a, b);
+		resiPrikazi(n, a, b);
 		ulaz.close();
 	}
-	
+
 }

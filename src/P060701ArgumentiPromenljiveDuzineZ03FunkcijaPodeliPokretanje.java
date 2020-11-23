@@ -3,7 +3,7 @@ class PokretanjeArgumentiPromenljiveDuzinePodeliPrikazi {
    static void prikazi(double... a) {
       for (double x : a)
          System.out.printf("%8.2f ", x);
-      System.out.printf("\n");
+      System.out.printf("%n");
    }
 
    static double[] podeli(int delilac, int... a) {

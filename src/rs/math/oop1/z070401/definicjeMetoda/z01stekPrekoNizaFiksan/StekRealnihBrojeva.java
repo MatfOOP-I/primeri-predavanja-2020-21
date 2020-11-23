@@ -20,7 +20,7 @@ class StekRealnihBrojeva {
 
    void push(double elem) {
       if (vrhSteka == elementi.length - 1) {
-         System.out.println("Greska PUSH: StekNiski je pun!");
+         System.err.println("Greska PUSH: StekNiski je pun!");
          return;
       }
       elementi[++vrhSteka] = elem;
@@ -28,7 +28,7 @@ class StekRealnihBrojeva {
 
    double pop() {
       if (vrhSteka == -1) {
-         System.out.println("Greska POP: StekNiski je prazan!");
+         System.err.println("Greska POP: StekNiski je prazan!");
          return -1;
       }
       return elementi[vrhSteka--];

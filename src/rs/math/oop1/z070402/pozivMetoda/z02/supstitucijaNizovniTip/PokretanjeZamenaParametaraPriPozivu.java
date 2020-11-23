@@ -23,10 +23,12 @@ public class PokretanjeZamenaParametaraPriPozivu {
    }
 
    static void utrostruciSve(double[] niz) {
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: niz=" + prikaziPomocno(niz));
+      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: niz=" 
+      + prikaziPomocno(niz));
       for (int i = 0; i < niz.length; i++)
          niz[i] = 3 * niz[i];
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   niz=" + prikaziPomocno(niz));
+      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   niz=" 
+      + prikaziPomocno(niz));
    }
 
    static void praviNovi(double[] niz) {
@@ -49,21 +51,21 @@ public class PokretanjeZamenaParametaraPriPozivu {
    }
 
    public static void main(String[] args) {
-      // Pokretanje 1: Metod moze da promeni neki od elemenata u parametru nizovnog
-      // tipa
-      System.out.println("\nPokretanjeiranje metoda utrostruciSve():");
-      double[] brojevi = { 1.0, 2, 3, 4, 5 };
-      System.out.println("Pre poziva:   brojevi=" + prikaziPomocno(brojevi));
-      utrostruciSve(brojevi);
-      System.out.println("Posle poziva: brojevi=" + prikaziPomocno(brojevi));
+      // // Pokretanje 1: Metod moze da promeni neki od elemenata u parametru nizovnog
+      // // tipa
+      // System.out.println("\nPokretanjeiranje metoda utrostruciSve():");
+      // double[] brojevi = { 1.0, 2, 3, 4, 5 };
+      // System.out.println("Pre poziva:   brojevi=" + prikaziPomocno(brojevi));
+      // utrostruciSve(brojevi);
+      // System.out.println("Posle poziva: brojevi=" + prikaziPomocno(brojevi));
 
-      // Pokretanje 2: Method ne moze nizovnom parametru trajno pridruziti neki drugi
-      // niz
-      System.out.println("\nPokretanjeiranje metoda praviNovi():");
-      double[] brojevi1 = { 1.0, 2, 3, 4, 5 };
-      System.out.println("Pre poziva: brojevi1=" + prikaziPomocno(brojevi1));
-      praviNovi(brojevi1);
-      System.out.println("Posle poziva: brojevi1=" + prikaziPomocno(brojevi1));
+      // // Pokretanje 2: Method ne moze nizovnom parametru trajno pridruziti neki drugi
+      // // niz
+      // System.out.println("\nPokretanjeiranje metoda praviNovi():");
+      // double[] brojevi1 = { 1.0, 2, 3, 4, 5 };
+      // System.out.println("Pre poziva: brojevi1=" + prikaziPomocno(brojevi1));
+      // praviNovi(brojevi1);
+      // System.out.println("Posle poziva: brojevi1=" + prikaziPomocno(brojevi1));
 
       // Pokretanje 3: Metod moze da vrati niz kao rezultat
       System.out.println("\nPokretanjeiranje metoda praviNovi1():");
