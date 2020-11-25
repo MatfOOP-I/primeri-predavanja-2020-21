@@ -26,13 +26,11 @@ public class PokretanjeDigitronPostfiksni {
       digitron.init();
       Scanner skener = new Scanner(System.in);
       while (true) {
-         System.out.println(
-                  "Unesi izraz u postfiksnom obliku (kraj za zavrsetak)");
+         System.out.println("Unesi izraz u postfiksnom obliku (kraj za zavrsetak)");
          String s = skener.nextLine().trim();
          if (s.equals("kraj"))
             break;
-         System.out.println(
-                  "Rezultat: " + digitron.izracunaj(s));
+         System.out.println("Rezultat: " + digitron.izracunaj(s));
       }
       skener.close();
    }

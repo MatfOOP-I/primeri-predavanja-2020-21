@@ -4,7 +4,7 @@ class PokretanjeArraysKopiranjeZNizCelih {
    private static void prikazi(int[] niz) {
       for (int x : niz)
          System.out.printf("%10d", x);
-      System.out.printf("\n");
+      System.out.printf("%n");
    }
 
    public static void main(String[] args) {
@@ -19,6 +19,10 @@ class PokretanjeArraysKopiranjeZNizCelih {
       int[] prosirenNiz = java.util.Arrays.copyOf(niz, 11);
       System.out.println("Prosiren niz (sadrzi 11 elemenata)");
       prikazi(prosirenNiz);
+
+      int[] josJedanNiz = new int[3];
+      System.arraycopy(niz, 1, josJedanNiz, 0, 3);
+      prikazi(josJedanNiz);
    }
 
 }

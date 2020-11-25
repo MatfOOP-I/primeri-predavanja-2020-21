@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class PokretanjeOkretanjeStek {
 
    public static void main(String[] args) {
-      String sekvenca1 = "13.4 7.4 6.3  3.2  4  51  6.2  4.7  3  14.5  -7.6";
+      String sekvenca1 = "107 13.4 7.4 6.3  3.2  4  51  6.2  4.7  3  14.5 10 -7.6";
       String sekvenca2 = "-3.4 -0.4 -3.3 83.2 -4";
       String sekvenca3 = "jedan 2 tri 4 pet";
       
@@ -34,7 +34,7 @@ public class PokretanjeOkretanjeStek {
       StekRealnihBrojeva stek1 = new StekRealnihBrojeva();
       stek1.init(1000);
       Scanner ulaz = new Scanner(sekvenca1);
-      while ( ulaz.hasNext())
+      while (ulaz.hasNext())
          stek1.push(ulaz.nextDouble());
       ulaz.close();
 

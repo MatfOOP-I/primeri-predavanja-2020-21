@@ -5,7 +5,7 @@ package rs.math.oop1.z070401.definicjeMetoda.z01stekPrekoNizaFiksan;
 Класа за реализацију стека који садржи бројеве у покретном зарезу.
 
 Стек се реализује преко низа.
- 
+
  */
 
 class StekRealnihBrojeva {

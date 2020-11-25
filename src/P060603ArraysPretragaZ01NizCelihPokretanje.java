@@ -22,7 +22,8 @@ class PokretanjeArraysPretragaNizCelih {
          System.out.printf("Broj %d se nalazi u nizu, na poziciji %d. \n", traziSe, pozicija);
       else {
          System.out.printf("Broj %d se ne nalazi u nizu.\n", traziSe);
-         System.out.printf("Da bi se sacuvala uredjenost niza, treba ga ubaciti na indeks %d.\n", -(pozicija + 1));
+         System.out.printf("Da bi se sacuvala uredjenost niza, treba ga ubaciti na indeks %d.\n", 
+            -(pozicija + 1));
       }
    }
 

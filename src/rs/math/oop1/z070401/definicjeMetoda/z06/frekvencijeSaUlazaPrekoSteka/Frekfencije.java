@@ -17,8 +17,6 @@ class Frekfencije {
       min = donja;
       max = gornja;
       brojPojava = new int[max - min + 1];
-      for (int i = 0; i < brojPojava.length; i++)
-         brojPojava[i] = 0;
       while (brojevi.brojElemenata() > 0) {
          int x = brojevi.pop();
          brojPojava[x - min]++;

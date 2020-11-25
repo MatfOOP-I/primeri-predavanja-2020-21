@@ -15,6 +15,20 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
    // deklarisi trougaoni niz
    static long[][] koeficijenti;
 
+   private static void initKoeficijenti(int brojVrsta) {
+      koeficijenti = new long[brojVrsta + 1][];
+      for (int n = 0; n <= brojVrsta; n++)
+         koeficijenti[n] = new long[n + 1];
+   }
+
+   private static void prikazKoeficijenti() {
+      for (long[] vrsta : koeficijenti) {
+         for (long elem : vrsta)
+            System.out.printf("%15d", elem);
+         System.out.println();
+      }
+   }
+
    static int bkMnozenje(int n, int k) {
       long rez = 1;
       if (k > n - k) {
@@ -58,7 +72,7 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
       skener.close();
 
       initKoeficijenti(brojVrsta);
-      //prikazKoeficijenti();
+      prikazKoeficijenti();
 
       // racunanje mnozenjem
       long vremePocetka = System.nanoTime();
@@ -67,7 +81,8 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
             koeficijenti[n][k] = bkMnozenje(n, k);
       prikazKoeficijenti();
       double trajanje = (System.nanoTime() - vremePocetka) / 1e9;
-      System.out.printf("Izracunavanje  mnozenjem je trajalo %f sekundi.", trajanje );
+      System.out.printf("Izracunavanje  mnozenjem je trajalo %f sekundi.", 
+         trajanje );
 
       // racunanje rekurzivno
       vremePocetka = System.nanoTime();
@@ -93,17 +108,4 @@ class PokretanjeDvodimenzionalniiNizBKDinamickoProgramiranje {
       System.out.println("Izracunavanje dinamickom programiranjem je trajalo " + trajanje + " sekundi.");
    }
 
-   private static void prikazKoeficijenti() {
-      for (long[] vrsta : koeficijenti) {
-         for (long elem : vrsta)
-            System.out.printf("%15d", elem);
-         System.out.println();
-      }
-   }
-
-   private static void initKoeficijenti(int brojVrsta) {
-      koeficijenti = new long[brojVrsta + 1][];
-      for (int n = 0; n <= brojVrsta; n++)
-         koeficijenti[n] = new long[n + 1];
-   }
 }

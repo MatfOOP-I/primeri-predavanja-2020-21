@@ -23,18 +23,18 @@ import java.util.Scanner;
 public class PokretanjeObratnoSveReci {
 
    public static void main(String[] args) {
-      System.out.println(
-               "Unesi tekst(<Ctrl>+d ili <Ctrl>+z za kraj):");
       StekNiski reci = new StekNiski();
       reci.init();
+
+      System.out.println("Unesi tekst(<Ctrl>+d ili <Ctrl>+z za kraj):");
       Scanner skener = new Scanner(System.in);
       while (skener.hasNext()) {
          String rec = skener.next();
          reci.push(rec);
       }
       skener.close();
-      System.out.println(
-               "\nReci teksta u obratnom redosledu su:");
+      
+      System.out.println("\nReci teksta u obratnom redosledu su:");
       while (reci.brojElemenata() > 0)
          System.out.print(reci.pop() + " ");
    }

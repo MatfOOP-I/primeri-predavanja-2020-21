@@ -9,6 +9,10 @@ class PokretanjeArgumentiPromenljiveDuzineZbir {
    //    return a1 + a2 + a3;
    // }
 
+   // static int zbir(int a1, int a2, int a3, int a4) {
+   //    return a1 + a2 + a3 + a4;
+   // }
+
    static int zbir(int... a) {
       int ret = 0;
       for (int x : a)

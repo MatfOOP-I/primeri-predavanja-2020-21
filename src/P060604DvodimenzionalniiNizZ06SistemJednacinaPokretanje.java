@@ -1,9 +1,8 @@
-import java.util.Scanner;
-import java.util.Arrays;
+
 
 class PokretanjeDvodimenzionalniiNizSistemJednacinaPopuni {
 
-    static double[][] ucitajMatricuSistema(Scanner ulaz, int n) {
+    static double[][] ucitajMatricuSistema(java.util.Scanner ulaz, int n) {
         System.out.println("Elementi matrice sistema su");
         double mat[][] = new double[n][n];
         for (int i = 0; i < n; i++)
@@ -12,7 +11,7 @@ class PokretanjeDvodimenzionalniiNizSistemJednacinaPopuni {
         return mat;
     }
 
-    static double[] ucitajSlobodneClanoveSistema(Scanner ulaz, int n) {
+    static double[] ucitajSlobodneClanoveSistema(java.util.Scanner ulaz, int n) {
         System.out.println("Elementi vektora slobodnih clanova su");
         double mat[] = new double[n];
         for (int i = 0; i < n; i++)
@@ -68,7 +67,7 @@ class PokretanjeDvodimenzionalniiNizSistemJednacinaPopuni {
         int n = a.length;
         double[][] rezultat = new double[n][n];
         for (int i = 0; i < n; i++)
-            rezultat[i] = Arrays.copyOf(a[i],n);
+            rezultat[i] = java.util.Arrays.copyOf(a[i],n);
         for (int i = 0; i < n; i++)
             rezultat[i][kolona] = b[i];
         return rezultat;
@@ -86,8 +85,8 @@ class PokretanjeDvodimenzionalniiNizSistemJednacinaPopuni {
     }
 
     public static void main(String[] args) {
-        Scanner ulaz = new Scanner("3 1 2 3 1 1 -1 2 3 8 0 1 2");
-        // Scanner ulaz = new Scanner(System.in);
+        java.util.Scanner ulaz = new java.util.Scanner("3 1 2 3 1 1 -1 2 3 8 0 1 2");
+        // java.util.Scanner ulaz = new java.util.Scanner(System.in);
         System.out.println("Dimenzija kvadratne matrice");
         int n = ulaz.nextInt();
         double[][] a = ucitajMatricuSistema(ulaz, n);

@@ -1,5 +1,7 @@
 package rs.math.oop1.z070401.definicjeMetoda.z07.digitronPostfiksni;
 
+import java.util.Scanner;
+
 class DigitronPostfiksni {
    StekNiski operatori;
    StekRealnihBrojeva argumenti;
@@ -12,11 +14,11 @@ class DigitronPostfiksni {
    double izracunaj(String ulaz) {
       operatori.init();
       argumenti.init();
-      java.util.Scanner skener = new java.util.Scanner(ulaz);
+      Scanner skener = new Scanner(ulaz);
       while (skener.hasNext()) {
          String s = skener.next().trim();
          if (s.equals("+") || s.equals("-") || s.equals("*")
-                  || s.equals("/") || s.equals("~"))
+                  || s.equals("/") || s.equals("~") || s.equals("^"))
             operatori.push(s);
          else
             argumenti.push(Double.parseDouble(s));
@@ -53,6 +55,11 @@ class DigitronPostfiksni {
          x = argumenti.pop();
          y = argumenti.pop();
          argumenti.push(y / x);
+         break;
+      case "^":
+         x = argumenti.pop();
+         y = argumenti.pop();
+         argumenti.push(Math.pow(y, x));
          break;
       case "~":
          x = argumenti.pop();

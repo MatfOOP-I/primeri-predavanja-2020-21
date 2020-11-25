@@ -26,7 +26,7 @@ class PokretanjeArraysPopunjavanjeNiza {
       java.util.Arrays.fill(nizNiski, str);
       for (String s : nizNiski)
          System.out.printf("%s ", s);
-      System.out.println("---");
+      System.out.printf("%n---");
 
       System.out.println("Dimenzija drugog niza");
       n = skener.nextInt();
@@ -36,7 +36,7 @@ class PokretanjeArraysPopunjavanjeNiza {
       java.util.Arrays.fill(nizBrojeva, x);
       for (int i = 0; i < nizBrojeva.length; i++)
          System.out.printf("%8.2f ", nizBrojeva[i]);
-      System.out.println("---");
+      System.out.printf("%n---");
 
       skener.close();
    }
