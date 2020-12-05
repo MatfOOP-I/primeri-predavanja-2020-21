@@ -26,12 +26,13 @@ public class PokretanjeGeometrija {
       System.out.println();
 
       Duz ao = new Duz();
-      //ao.init("AO", a, o); // ovo je dobro!
-      ao.initNeValja("AO", a, o); // ovo nije dobro!
+      ao.init("AO", a, o); // ovo je dobro!
+      //ao.initNeValja("AO", a, o); // ovo nije dobro!
       ao.prikaziSe();
       System.out.println();
 
       o.y = 7.5;
+      o.prikaziSe(System.out, true);
       ao.prikaziSe();
       System.out.println();
 

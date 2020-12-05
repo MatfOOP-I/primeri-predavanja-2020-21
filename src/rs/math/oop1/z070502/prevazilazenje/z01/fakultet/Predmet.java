@@ -10,11 +10,11 @@ package rs.math.oop1.z070502.prevazilazenje.z01.fakultet;
 
 public class Predmet {
 
-   public static final int brojPredmeta = 5;
+   public static final int BROJ_PREDMETA = 5;
 
-   private static final String[] sifrePredmeta = new String[brojPredmeta];
+   private static final String[] sifrePredmeta = new String[BROJ_PREDMETA];
 
-   private static final String[] naziviPredmeta = new String[brojPredmeta];
+   private static final String[] naziviPredmeta = new String[BROJ_PREDMETA];
 
    // staticki inicijalizacioni blok
    static {

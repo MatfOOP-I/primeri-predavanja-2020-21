@@ -25,11 +25,13 @@ public class PokretanjeGeometrija {
       System.out.println();
 
       Duz ao = new Duz();
-      ao.init("AO", a, o); //ao.init2("AO", a, o);
+      //ao.init("AO", a, o); 
+      ao.init2("AO", a, o);
       ao.prikaziSe();
       System.out.println();
 
       o.y = 7.5;
+      o.prikaziSe(false);
       ao.prikaziSe();
       System.out.println();
 

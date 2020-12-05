@@ -6,22 +6,6 @@ public class PovezanaLista {
    private ElemenatListe kraj = null;
    private ElemenatListe tekuci = null;
 
-   public PovezanaLista() {
-   }
-
-   public PovezanaLista(String elem) {
-      if (elem != null)
-         tekuci = kraj = pocetak = new ElemenatListe(elem);
-   }
-
-   public PovezanaLista(String[] elementi) {
-      if (elementi == null)
-         return;
-      for (int i = 0; i < elementi.length; i++)
-         dodajElemenatNaKraj(elementi[i]);
-      tekuci = pocetak;
-   }
-
    public void dodajElemenatNaKraj(String elem) {
       ElemenatListe noviKraj = new ElemenatListe(elem);
       if (pocetak == null)
@@ -71,6 +55,23 @@ public class PovezanaLista {
       pocetak = prvi.getSledeci();
       return prvi.getSadrzaj();
    }
+
+   public PovezanaLista() {
+   }
+
+   public PovezanaLista(String elem) {
+      if (elem != null)
+         tekuci = kraj = pocetak = new ElemenatListe(elem);
+   }
+
+   public PovezanaLista(String[] elementi) {
+      if (elementi == null)
+         return;
+      for (int i = 0; i < elementi.length; i++)
+         dodajElemenatNaKraj(elementi[i]);
+      tekuci = pocetak;
+   }
+
 
    public String getPrvi() {
       tekuci = pocetak;

@@ -45,13 +45,12 @@ public class Prava extends GeometrijskiObjekat {
    }
 
    public boolean suSaIsteStranePrave(Tacka t1, Tacka t2) {
-      return uvrstiKoordinate(t1)
-               * uvrstiKoordinate(t2) > 0;
+      return uvrstiKoordinate(t1) * uvrstiKoordinate(t2) > 0;
    }
 
    public boolean suSaRaznihStranaPrave(Tacka t1,
             Tacka t2) {
-      return !suSaIsteStranePrave(t1, t2);
+      return uvrstiKoordinate(t1) * uvrstiKoordinate(t2) < 0;
    }
 
    public boolean jeParalelnaSa(Prava p) {

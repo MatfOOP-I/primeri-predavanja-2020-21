@@ -5,18 +5,18 @@ class Duz {
    Tacka a;
    Tacka b;
 
-   void initNeValja(String o, Tacka t1, Tacka t2) {
+   void initNeValja(String o, Tacka a, Tacka b) {
       oznaka = o;
-      a = t1;
-      b = t2;
+      this.a = a;
+      this.b = b;
    }
 
-   void init(String o, Tacka t1, Tacka t2) {
+   void init(String o, Tacka a, Tacka b) {
       oznaka = o;
-      a = new Tacka();
-      a.init(t1.oznaka, t1.x, t1.y);
-      b = new Tacka();
-      b.init(t2.oznaka, t2.x, t2.y);
+      this.a = new Tacka();
+      this.a.init(a.oznaka, a.x, a.y);
+      this.b = new Tacka();
+      this.b.init(b.oznaka, b.x, b.y);
    }
 
    void prikaziSe() {

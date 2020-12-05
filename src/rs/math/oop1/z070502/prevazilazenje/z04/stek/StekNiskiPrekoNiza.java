@@ -11,7 +11,7 @@
 
 package rs.math.oop1.z070502.prevazilazenje.z04.stek;
 
-public class StekNiskiPrekoNiza extends Stek {
+public class StekNiskiPrekoNiza extends StekNiski {
 
    private String[] elementi;
    private int vrhSteka;

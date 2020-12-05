@@ -36,13 +36,11 @@ public class PokretanjeFakultet {
       Student stud3 = new Student("Janko", "Jankovic", "R",
                114, 2015, 3);
       stud3.setOcena(3, 10);
-      System.out.println("Studenti:\n---------");
-      Student[] sviStudenti =
-      { stud1, stud2, stud3 };
-      for (int i = 0; i < sviStudenti.length; i++)
-         sviStudenti[i].prikazi();
-      Covek[] sviLjudi =
-      { prof1, stud1, stud2, stud3 };
+      // System.out.println("Studenti:\n---------");
+      // Student[] sviStudenti = { stud1, stud2, stud3 };
+      // for (int i = 0; i < sviStudenti.length; i++)
+      //    sviStudenti[i].prikazi();
+      Covek[] sviLjudi = { prof1, stud1, stud2, stud3 };
       System.out.println("Ljudi:\n------");
       for (Covek c : sviLjudi)
          c.prikazi();

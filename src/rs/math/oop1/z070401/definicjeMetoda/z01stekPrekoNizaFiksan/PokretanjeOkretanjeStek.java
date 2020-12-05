@@ -32,7 +32,7 @@ public class PokretanjeOkretanjeStek {
       System.out.printf("%s", sekvenca3);
  
       StekRealnihBrojeva stek1 = new StekRealnihBrojeva();
-      stek1.init(1000);
+      stek1.init(10);
       Scanner ulaz = new Scanner(sekvenca1);
       while (ulaz.hasNext())
          stek1.push(ulaz.nextDouble());

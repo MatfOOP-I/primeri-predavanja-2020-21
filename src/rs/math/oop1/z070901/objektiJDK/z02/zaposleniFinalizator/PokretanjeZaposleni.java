@@ -25,6 +25,25 @@ class Zaposleni {
     }
 
     @Override
+    public boolean equals(Object objekat) {
+        if( objekat == null)
+            return false;
+        if( this == objekat)
+            return true;
+        if( ! (objekat instanceof Zaposleni) )
+            return false;
+        Zaposleni z = (Zaposleni) objekat;
+        return (this.broj == z.broj && this.ime.equals(z.ime) 
+        && this.plata == z.plata );
+    }
+
+    @Override
+    public int hashCode(){
+        return 5 * (new Double(plata)).hashCode() + 7 * ime.hashCode() 
+        + 11 * (new Integer(broj)).hashCode();
+    }
+
+    @Override
     public void finalize() {
         System.out.println("FINALIZUJEM! " + ime + ":" + broj);
     }

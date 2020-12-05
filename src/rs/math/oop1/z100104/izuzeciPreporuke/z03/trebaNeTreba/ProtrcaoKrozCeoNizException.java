@@ -2,6 +2,7 @@ package rs.math.oop1.z100104.izuzeciPreporuke.z03.trebaNeTreba;
 
 public class ProtrcaoKrozCeoNizException extends Exception
 {
+	private static final long serialVersionUID = 1L;
 	double suma;
 	int indeks;
 	

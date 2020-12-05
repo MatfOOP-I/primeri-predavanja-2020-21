@@ -20,8 +20,7 @@ public class PokretanjeGeometrija {
       Tacka c = new Tacka(10.45, 22);
       Tacka d = new Tacka(22.3, 17.5);
       Tacka e = new Tacka("E", 25, 25.5);
-      System.out.println(
-               a + " " + b + " " + c + " " + d + " " + e);
+      System.out.println( a + " " + b + " " + c + " " + d + " " + e);
       Duz ab = new Duz("AB", a, b);
       System.out.println(ab + " l=" + ab.duzina());
       Prava p = new Prava(a, d);
@@ -33,7 +32,7 @@ public class PokretanjeGeometrija {
       System.out.println(bcde + " P=" + bcde.povrsina());
       Krug k1 = new Krug(b, 18);
       System.out.println(k1 + " P=" + k1.povrsina());
-      System.out.println("Geometrijski objektiJDK:");
+      System.out.println("Geometrijski objekti JDK:");
       GeometrijskiObjekat[] svi =
       { a, b, c, d, e, ab, p, bcd, bcde, k1 };
       for (GeometrijskiObjekat go : svi)

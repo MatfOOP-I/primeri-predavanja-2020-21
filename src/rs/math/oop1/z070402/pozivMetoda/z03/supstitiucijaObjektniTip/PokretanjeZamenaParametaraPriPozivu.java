@@ -19,41 +19,41 @@ package rs.math.oop1.z070402.pozivMetoda.z03.supstitiucijaObjektniTip;
 public class PokretanjeZamenaParametaraPriPozivu {
 
    static void utrostruciPlatu(Profesor x) {
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: x.plata=" + x.plata);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: x.plata=" + x.plata);
       x.povecajPlatu(200);
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   x.plata=" + x.plata);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   x.plata=" + x.plata);
    }
 
-   static void razmeni(Profesor x, Profesor y) {
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: x=" + x.imePrezime);
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: y=" + y.imePrezime);
+   static void razmeniReference(Profesor x, Profesor y) {
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: x=" + x.imePrezime);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: y=" + y.imePrezime);
       Profesor temp = x;
       x = y;
       y = temp;
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   x=" + x.imePrezime);
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   y=" + y.imePrezime);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   x=" + x.imePrezime);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   y=" + y.imePrezime);
    }
 
-   static void trajnoRazmeni(Profesor x, Profesor y) {
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: x=" + x.imePrezime);
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: y=" + y.imePrezime);
+   static void razmeniPolja(Profesor x, Profesor y) {
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: x=" + x.imePrezime);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: y=" + y.imePrezime);
       String temp1 = x.imePrezime;
       x.imePrezime = y.imePrezime;
       y.imePrezime = temp1;
       double temp2 = x.plata;
       x.plata = y.plata;
       y.plata = temp2;
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   x=" + x.imePrezime);
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   y=" + y.imePrezime);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   x=" + x.imePrezime);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   y=" + y.imePrezime);
    }
 
    static Profesor kreiraj(String ime, String prezime, double plata) {
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: ime=" + ime);
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: prezime=" + prezime);
-      System.out.println("\tUnutar metoda, na pocetku izvrsavanja: plata=" + plata);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: ime=" + ime);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: prezime=" + prezime);
+      System.out.println("   Unutar metoda, na pocetku izvrsavanja: plata=" + plata);
       Profesor rez = new Profesor();
       rez.init(ime + " " + prezime, plata);
-      System.out.println("\tUnutar metoda, na kraju izvrsavanja:   rez=" + rez.imePrezime);
+      System.out.println("   Unutar metoda, na kraju izvrsavanja:   rez=" + rez.imePrezime);
       return rez;
    }
 
@@ -61,7 +61,7 @@ public class PokretanjeZamenaParametaraPriPozivu {
       // Pokretanje 1: Metod moze da promeni vrednosti polja objektnih parametara
       System.out.println("\nPokretanjeiranje metoda utrostruciPlatu():");
       Profesor pera = new Profesor();
-      pera.init("Pera", 80_000);
+      pera.init("Pera Peric", 80_000);
       System.out.println("Pre poziva:   plata=" + pera.plata);
       utrostruciPlatu(pera);
       System.out.println("Posle poziva: plata=" + pera.plata);
@@ -75,7 +75,7 @@ public class PokretanjeZamenaParametaraPriPozivu {
       b.init("Bora", 60_000);
       System.out.println("Pre poziva:   a=" + a.imePrezime);
       System.out.println("Pre poziva:   b=" + b.imePrezime);
-      razmeni(a, b);
+      razmeniReference(a, b);
       System.out.println("Posle poziva: a=" + a.imePrezime);
       System.out.println("Posle poziva: b=" + b.imePrezime);
 
@@ -88,7 +88,7 @@ public class PokretanjeZamenaParametaraPriPozivu {
       bb.init("Bora", 60_000);
       System.out.println("Pre poziva:   aa=" + aa.imePrezime);
       System.out.println("Pre poziva:   bb=" + bb.imePrezime);
-      trajnoRazmeni(aa, bb);
+      razmeniPolja(aa, bb);
       System.out.println("Posle poziva: aa=" + aa.imePrezime);
       System.out.println("Posle poziva: bb=" + bb.imePrezime);
 

@@ -1,5 +1,7 @@
 package rs.math.oop1.z070402.pozivMetoda.z05.geometrijaPreopterecenje;
 
+import java.io.PrintStream;
+
 class Tacka {
    double x;
    double y;
@@ -20,6 +22,13 @@ class Tacka {
          System.out.print(oznaka + "(" + x + "," + y + ")");
       else
          System.out.print("(" + x + "," + y + ")");
+   }
+
+   void prikaziSe(PrintStream tok, boolean bezOznake) {
+      if (!bezOznake)
+         tok.print(oznaka + "(" + x + "," + y + ")");
+      else
+         tok.print("(" + x + "," + y + ")");
    }
 
 }

@@ -11,7 +11,7 @@
 
 package rs.math.oop1.z070502.prevazilazenje.z04.stek;
 
-public class StekNiskiPrekoListe extends Stek {
+public class StekNiskiPrekoListe extends StekNiski {
 
    private PovezanaLista elementi = new PovezanaLista();
 

@@ -32,7 +32,7 @@ public class PokretanjeGeometrija {
       Tacka[] tacke = { a, o, b, c };
       for (int i = 0; i < tacke.length; i++)
          tacke[i].prikaziSe(false);
-      System.out.println();
+      System.out.println("---");
 
       Duz ao = new Duz();
       ao.init("AO", a, o);

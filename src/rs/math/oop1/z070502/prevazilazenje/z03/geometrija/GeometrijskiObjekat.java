@@ -1,6 +1,7 @@
 package rs.math.oop1.z070502.prevazilazenje.z03.geometrija;
 
 public class GeometrijskiObjekat {
+   
    public static int brojKreiranih = 0;
 
    private String oznaka;
@@ -25,7 +26,7 @@ public class GeometrijskiObjekat {
       System.out.printf(oznaka);
    }
 
-   boolean jeKonveksan() {
+   public boolean jeKonveksan() {
       return false; // ovo nikad ne treba da bude izvrseno
    }
 

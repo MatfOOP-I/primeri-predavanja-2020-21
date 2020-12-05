@@ -24,7 +24,9 @@ public class PokretanjeStackTrace
 		Throwable t = new Throwable();
 		StackTraceElement[] frames = t.getStackTrace();
 		for (StackTraceElement f : frames)
-			System.out.println( s + f );
+			System.out.println(s + f.getClassName() 
+			+ " " + f.getMethodName() + " - " + f.getFileName() 
+			+ ":" + f.getLineNumber() );
 		int r;
 		if (n <= 1)
 			r = 1;
@@ -47,6 +49,7 @@ public class PokretanjeStackTrace
 		Scanner in = new Scanner( System.in );
 		System.out.print( "Enter n: " );
 		int n = in.nextInt();
+		in.close();
 		factorial( n );
 	}
 }

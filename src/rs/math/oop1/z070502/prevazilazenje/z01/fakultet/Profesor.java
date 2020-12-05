@@ -15,7 +15,8 @@ public class Profesor extends Covek {
    private boolean[] predaje;
 
    {
-      predaje = new boolean[Predmet.brojPredmeta];
+      predaje = new boolean[Predmet.BROJ_PREDMETA];
+      // nepotrebno
       Arrays.fill(predaje, false);
    }
 
@@ -68,13 +69,13 @@ public class Profesor extends Covek {
    }
 
    public void prikazi() {
-      System.out.printf("Profesor: ");
+      System.out.print("Profesor: ");
       super.prikazi();
       System.out.printf(
-               "\nKatedra: %s. Zvanje: %s\nPredaje sledece predmete:\n",
+               "%nKatedra: %s. Zvanje: %s%nPredaje sledece predmete:%n",
                katedra, zvanje);
       for (int i = 0; i < predaje.length; i++)
-         System.out.printf("%s:\t%s\n",
+         System.out.printf("%s: %s%n",
                   Predmet.getNazivPredmeta(i),
                   (predaje[i]) ? "da " : "ne ");
    }
@@ -87,7 +88,7 @@ public class Profesor extends Covek {
       String profKatedra = skener.next();
       System.out.println("Zvanje nastavnika");
       String profZvanje = skener.next();
-      boolean profPredajeNa[] = new boolean[Predmet.brojPredmeta];
+      boolean profPredajeNa[] = new boolean[Predmet.BROJ_PREDMETA];
       System.out.printf(
                "Unesi na kojim od %d predmeta nastavnika predaje (0 znaci da ne predaje)\n",
                profPredajeNa.length);

@@ -36,7 +36,7 @@ class Matrica {
 
    boolean jeKorektna() {
       if (mat == null)
-         return true;
+         return false;
       return jeKorektnaPomocno(mat);
    }
 
@@ -46,6 +46,7 @@ class Matrica {
          return;
       }
       mat = new double[m][n];
+      // ovo nije neophodno, tj. predstavlja visak
       for (int i = 0; i < m; i++)
          for (int j = 0; j < n; j++)
             mat[i][j] = 0;
@@ -75,7 +76,7 @@ class Matrica {
       for (double[] vrsta : mat) {
          for (double x : vrsta)
             System.out.printf("%15.4f", x);
-         System.out.printf("\n");
+         System.out.printf("%n");
       }
    }
 

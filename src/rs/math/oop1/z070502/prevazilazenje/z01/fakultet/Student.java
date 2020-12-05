@@ -23,7 +23,7 @@ public class Student extends Covek {
    }
 
    {
-      ocene = new int[Predmet.brojPredmeta];
+      ocene = new int[Predmet.BROJ_PREDMETA];
       Arrays.fill(ocene, -1);
       brojIndeksa = pocetnaVrednost++;
       godinaUpisa = 2100;
@@ -143,7 +143,7 @@ public class Student extends Covek {
       String studSmer = skener.next();
       System.out.println("Godina studija za studenta");
       int studGodinaStudija = skener.nextInt();
-      int[] studOcene = new int[Predmet.brojPredmeta];
+      int[] studOcene = new int[Predmet.BROJ_PREDMETA];
       System.out.printf(
                "Unesi ocene iz %d predmeta (-1 znaci nije polagao)\n",
                studOcene.length);
