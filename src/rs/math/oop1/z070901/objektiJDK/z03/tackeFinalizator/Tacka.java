@@ -1,9 +1,9 @@
 package rs.math.oop1.z070901.objektiJDK.z03.tackeFinalizator;
 
 public class Tacka {
-   int x;
-   int y;
-   String oznaka;
+   private int x;
+   private int y;
+   private String oznaka;
 
    Tacka(int xKoord, int yKoord, String o) {
       x = xKoord;
@@ -31,8 +31,13 @@ public class Tacka {
       y = yKoord;
    }
 
+   @Override
+   public String toString(){
+      return oznaka + ":(" + x + "," + y + ")";
+   }
+
    void prikaziSe() {
-      System.out.print(oznaka + ":(" + x + "," + y + ")");
+      System.out.print(this);
    }
 
    double rastojanje(Tacka drugaTacka) {
@@ -41,6 +46,6 @@ public class Tacka {
 
    @Override
    protected void finalize() {
-      System.out.println("Recikiram " + oznaka + ":(" + x + "," + y + ")");
+      System.out.println("Recikliram " + oznaka + ":(" + x + "," + y + ")");
    }
 }

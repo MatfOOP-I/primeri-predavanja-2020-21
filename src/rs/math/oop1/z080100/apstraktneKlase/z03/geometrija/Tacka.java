@@ -45,19 +45,19 @@ public class Tacka extends GeometrijskiObjekat {
       this.y = y;
    }
 
-
    public double rastojanje(Tacka t) {
-      return (Math.sqrt(Math.pow(t.x - x, 2)
-            + Math.pow(t.y - y, 2)));
+      return (Math.sqrt(Math.pow(t.x - x, 2) + Math.pow(t.y - y, 2)));
    }
 
    @Override
    public boolean equals(Object o) {
-      if (this == o) return true;
-      if (o == null || getClass() != o.getClass()) return false;
+      if (this == o)
+         return true;
+      if (o == null || getClass() != o.getClass())
+         return false;
       Tacka tacka = (Tacka) o;
-      return Double.compare(tacka.getX(), getX()) == 0 &&
-            Double.compare(tacka.getY(), getY()) == 0;
+      return Double.compare(tacka.getX(), getX()) == 0 
+         && Double.compare(tacka.getY(), getY()) == 0;
    }
 
    @Override
@@ -72,7 +72,7 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public void prikaziSe() {
-      System.out.printf("%s\n", this);
+      System.out.printf("%s%n", this);
    }
 
    @Override

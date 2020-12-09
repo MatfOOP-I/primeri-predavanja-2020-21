@@ -26,19 +26,18 @@ public class Duz extends GeometrijskiObjekat implements OblikPrikaz, Sadrzavanje
 
    @Override
    public boolean equals(Object o) {
-      if (this == o) return true;
-      if (o == null || getClass() != o.getClass()) return false;
+      if (this == o)
+         return true;
+      if (o == null || getClass() != o.getClass())
+         return false;
       Duz duz = (Duz) o;
-      return (a.equals(duz.a) &&
-            b.equals(duz.b))
-            || (a.equals(duz.b) &&
-            b.equals(duz.a));
+      return (a.equals(duz.a) && b.equals(duz.b)) || (a.equals(duz.b) && b.equals(duz.a));
    }
 
    @Override
    public int hashCode() {
-      Tacka o = new Tacka(0,0);
-      if( o.rastojanje(a) <= o.rastojanje(b) )
+      Tacka o = new Tacka(0, 0);
+      if (o.rastojanje(a) <= o.rastojanje(b))
          return Objects.hash(a, b);
       else
          return Objects.hash(b, a);
@@ -46,7 +45,7 @@ public class Duz extends GeometrijskiObjekat implements OblikPrikaz, Sadrzavanje
 
    @Override
    public String toString() {
-     return getOznaka() + ":[" + a + ";" + b + "]";
+      return getOznaka() + ":[" + a + ";" + b + "]";
    }
 
    @Override
@@ -66,14 +65,9 @@ public class Duz extends GeometrijskiObjekat implements OblikPrikaz, Sadrzavanje
 
    @Override
    public boolean sadrzi(Tacka t) {
-      boolean kolinearne = ((t.getY() - a.getY())
-            * (b.getX() - a.getX()) == (b.getY()
-            - a.getY())
+      boolean kolinearne = ((t.getY() - a.getY()) * (b.getX() - a.getX()) == (b.getY() - a.getY())
             * (t.getX() - a.getX()));
-      return kolinearne && t.getX() >= a.getX()
-            && t.getX() <= b.getX()
-            && t.getY() >= a.getY()
-            && t.getY() <= b.getY();
+      return kolinearne && t.getX() >= a.getX() && t.getX() <= b.getX() && t.getY() >= a.getY() && t.getY() <= b.getY();
    }
 
 }

@@ -62,7 +62,7 @@ class Nastavnik extends Covek {
 
    @Override
    public void leciSe() {
-      System.out.println( "Odlazi u u dom zdravlja..." );
+      System.out.println( "Odlazi u dom zdravlja..." );
    }
 
 }

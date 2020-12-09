@@ -9,12 +9,12 @@ public class PokretanjeProba {
         proba.prikaziPitanje();
         System.out.println(proba.pitanje());
         System.out.println(proba.pitanje2());
-        System.out.println();
+        System.out.println("---");
 
         Prvi p = new Proba();
         p.prikaziPitanje();
         System.out.println(p.pitanje());
-//        System.out.println(p.pitanje2());
-        System.out.println();
+        //System.out.println(p.pitanje2());
+        System.out.println("---");
     }
 }

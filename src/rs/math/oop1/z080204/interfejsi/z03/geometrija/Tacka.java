@@ -89,6 +89,6 @@ public class Tacka extends GeometrijskiObjekat implements OblikPrikaz, Sadrzavan
 
    @Override
    public boolean sadrzi(Tacka t) {
-      return x == t.x && y == t.y;
+      return equals(t);
    }
 }

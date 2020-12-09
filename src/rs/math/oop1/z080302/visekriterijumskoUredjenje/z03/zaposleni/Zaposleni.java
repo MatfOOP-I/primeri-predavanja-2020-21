@@ -28,6 +28,7 @@ public class Zaposleni implements Comparable
 		plata += iznosPovisice;
 	}
 	
+	@Override
 	public int compareTo( Object o )
 	{
 		if (!(o instanceof Zaposleni))
@@ -38,6 +39,11 @@ public class Zaposleni implements Comparable
 		if (plata > drugi.plata)
 			return -1;
 		return 0;
+	}
+
+	@Override
+	public String toString() {
+		return "Zaposleni: ime=" + getIme() + ", plata=" + getPlata();
 	}
 	
 }

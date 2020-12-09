@@ -64,7 +64,6 @@ public class Trougao extends GeometrijskiObjekat {
 
    @Override
    public int hashCode() {
-      Tacka o = new Tacka(0, 0);
       return Objects.hash(a, b, c);
    }
 
@@ -75,7 +74,7 @@ public class Trougao extends GeometrijskiObjekat {
 
    @Override
    public void prikaziSe() {
-      System.out.printf("%s\n", this);
+      System.out.printf("%s%n", this);
    }
 
    @Override

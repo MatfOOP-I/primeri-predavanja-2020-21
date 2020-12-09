@@ -2,14 +2,13 @@ package rs.math.oop1.z080204.interfejsi.z03.geometrija;
 
 import static java.lang.Math.abs;
 
-public class Prava extends GeometrijskiObjekat implements  Oblik, Prikaz, Sadrzavanje{
+public class Prava extends GeometrijskiObjekat implements Oblik, Prikaz, Sadrzavanje {
 
    private double a;
    private double b;
    private double c;
 
-   public Prava(String oznaka, double a, double b,
-                double c) {
+   public Prava(String oznaka, double a, double b, double c) {
       super(oznaka);
       this.a = a;
       this.b = b;
@@ -64,9 +63,8 @@ public class Prava extends GeometrijskiObjekat implements  Oblik, Prikaz, Sadrza
          m = b;
       if (abs(c) > abs(m))
          m = c;
-      return 3 * (new Double(a / m)).hashCode()
-            + 5 * (new Double(b / m)).hashCode()
-            + 7 * (new Double(c / m)).hashCode();
+      return 3 * (Double.valueOf(a / m)).hashCode() + 5 * (Double.valueOf(b / m)).hashCode()
+            + 7 * (Double.valueOf(c / m)).hashCode();
    }
 
    @Override
@@ -93,7 +91,5 @@ public class Prava extends GeometrijskiObjekat implements  Oblik, Prikaz, Sadrza
    public boolean sadrzi(Tacka t) {
       return (uvrstiKoordinate(t) == 0);
    }
-
-
 
 }

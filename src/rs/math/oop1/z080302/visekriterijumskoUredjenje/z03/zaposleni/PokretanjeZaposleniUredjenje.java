@@ -15,29 +15,30 @@ public class PokretanjeZaposleniUredjenje
 		
 		System.out.println( "-Pre sortiranja-" );
 		for (Zaposleni e : osoblje)
-			System.out.println( "ime=" + e.getIme() + ",plata=" + e.getPlata() );
+			System.out.println( e );
 		
 		System.out.println( "-Podrazumevano-" );
 		Arrays.sort( osoblje );
 		for (Zaposleni e : osoblje)
-			System.out.println( "ime=" + e.getIme() + ",plata=" + e.getPlata() );
+			System.out.println( e );
 		
 		System.out.println( "-Po imenu-" );
 		Comparator c = new ZaposleniImeComparator();
 		Arrays.sort( osoblje, c );
 		for (Zaposleni e : osoblje)
-			System.out.println( "ime=" + e.getIme() + ",plata=" + e.getPlata() );
+			System.out.println( e );
 		
 		System.out.println( "-Po imenu obratno-" );
 		Arrays.sort( osoblje, new ZaposleniImeObratnoComparator() );
 		for (Zaposleni e : osoblje)
-			System.out.println( "ime=" + e.getIme() + ",plata=" + e.getPlata() );
+			System.out.println( e );
 		
 		System.out.println( "-Po plati-" );
 		Arrays.sort( osoblje, new ZaposleniPlataComparator() );
 		for (Zaposleni e : osoblje)
-			System.out.println( "ime=" + e.getIme() + ",plata=" + e.getPlata() );
+			System.out.println( e );
 
 
 	}
+
 }

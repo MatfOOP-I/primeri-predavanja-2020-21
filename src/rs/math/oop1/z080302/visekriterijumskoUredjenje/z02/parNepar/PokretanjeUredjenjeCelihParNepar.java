@@ -8,9 +8,9 @@ class ParNeparComparator implements Comparator {
    @Override
    public int compare(Object o1, Object o2) {
       if (!(o1 instanceof Integer))
-         return -1;
-      if (!(o2 instanceof Integer))
          return 1;
+      if (!(o2 instanceof Integer))
+         return -1;
       int i1 = ((Integer) o1).intValue();
       int i2 = ((Integer) o2);
       if (i1 % 2 == 0) {
@@ -30,8 +30,6 @@ class ParNeparComparator implements Comparator {
 
 public class PokretanjeUredjenjeCelihParNepar {
 
-
-
    public static void main(String[] args) {
       Integer[] niz = {-3, 4, -2, 1, 2, 0, 3, 4, -4};
 
@@ -45,7 +43,7 @@ public class PokretanjeUredjenjeCelihParNepar {
       System.out.println("Posle podrazumevanog sortiranja");
       for (int x : niz)
          System.out.print(x + " ");
-      System.out.println();
+      System.out.println("---");
 
       Arrays.sort(niz, new ParNeparComparator());
 

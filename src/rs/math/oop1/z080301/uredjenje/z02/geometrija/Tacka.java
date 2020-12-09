@@ -2,8 +2,7 @@ package rs.math.oop1.z080301.uredjenje.z02.geometrija;
 
 import java.awt.Graphics;
 
-public class Tacka extends GeometrijskiObjekat
-        implements SpecijalniPrikaz, Comparable {
+public class Tacka extends GeometrijskiObjekat implements SpecijalniPrikaz, Comparable {
     private int x;
     private int y;
 
@@ -33,7 +32,6 @@ public class Tacka extends GeometrijskiObjekat
         return x;
     }
 
-
     public int getY() {
         return y;
     }
@@ -43,8 +41,7 @@ public class Tacka extends GeometrijskiObjekat
     }
 
     private String toStringHelper(boolean bezOznake) {
-        return ( !bezOznake ? getOznaka() : "")
-                + "(" + x + "," + y + ")";
+        return (!bezOznake ? getOznaka() : "") + "(" + x + "," + y + ")";
     }
 
     @Override
@@ -65,23 +62,22 @@ public class Tacka extends GeometrijskiObjekat
 
     @Override
     public void prikaziSe(boolean bezOznake) {
-        System.out.print( toStringHelper(bezOznake));
+        System.out.print(toStringHelper(bezOznake));
     }
 
     public double rastojanje(Tacka drugaTacka) {
-        return Math.sqrt(Math.pow(x - drugaTacka.x, 2)
-                + Math.pow(y - drugaTacka.y, 2));
+        return Math.sqrt(Math.pow(x - drugaTacka.x, 2) + Math.pow(y - drugaTacka.y, 2));
     }
 
     @Override
     public int compareTo(Object obj) {
         if (!(obj instanceof Tacka))
-            return -1;  // Tacka je uvek ispred neceg sto nije tacka
+            return -1; // Tacka je uvek ispred neceg sto nije tacka
         Tacka t = (Tacka) obj;
         Tacka o = new Tacka(0, 0, "");
         double razlika = rastojanje(o) - t.rastojanje(o);
         if (razlika != 0)
             return (int) razlika;
-        return x - t.x;
+        return y - t.y;
     }
 }

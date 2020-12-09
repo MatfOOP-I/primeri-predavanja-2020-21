@@ -3,11 +3,11 @@ package rs.math.oop1.z080204.interfejsi.z03.geometrija;
 public abstract class GeometrijskiObjekat {
    public static int brojKreiranih = 0;
 
-   private String oznaka;
-
    {
       brojKreiranih++;
    }
+
+   private String oznaka;
 
    public GeometrijskiObjekat(String oznaka) {
 

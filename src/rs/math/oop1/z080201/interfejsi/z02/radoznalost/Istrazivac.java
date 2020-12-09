@@ -10,6 +10,6 @@ public class Istrazivac extends Naucnik {
 
    @Override
    public void interesujeSe() {
-      System.out.println("'" + getIme() +"' je ostvario proboj u naucnoj oblasti " + probojUOblasti +".");
+      System.out.println("'" + getIme() +"' je ostvario proboj u naucnoj oblasti '" + probojUOblasti +"'.");
    }
 }

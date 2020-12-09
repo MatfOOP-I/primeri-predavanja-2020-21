@@ -13,12 +13,12 @@ public class PokretanjeProba {
         System.out.println(proba.pitanje2());
         System.out.println();
 
-        Prvi p = new Proba(); //proba;
+        Prvi p = proba; 
         p.prikaziPitanje();
         System.out.println(p.pitanje());
         System.out.println();
 
-        Drugi d = proba; //new Proba();
+        Drugi d = proba; 
         d.prikaziOdgovor();
         System.out.println(d.odgovor());
         System.out.println();

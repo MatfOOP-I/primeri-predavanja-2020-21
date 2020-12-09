@@ -46,7 +46,7 @@ class Zaposleni implements Comparable
    @Override
    public int hashCode()
    {
-      return 3 * imePrezime.hashCode() + 7 * new Double(plata).hashCode();
+      return 3 * imePrezime.hashCode() + 7 * (Double.valueOf(plata)).hashCode();
    }
 
    @Override

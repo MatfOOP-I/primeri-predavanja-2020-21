@@ -31,7 +31,7 @@ class Zaposleni {
 public class PokretanjeNiskaReprezentacija {
 
     public static void main(String[] args) {
-        Zaposleni miki = new Zaposleni("Miki Maus", 42_000);
+        Zaposleni miki = new Zaposleni("Miki Maus", 42_000.344);
         System.out.println(miki);
     }
 

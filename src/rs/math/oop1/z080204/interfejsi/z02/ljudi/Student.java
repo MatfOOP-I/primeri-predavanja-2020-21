@@ -14,7 +14,6 @@ class Student extends Covek implements Deskripcija, Kvalitet {
       this.godinaStudija = godinaStudija;
    }
 
-
    public String getSmer() {
       return smer;
    }

@@ -11,11 +11,11 @@ public class PokretanjeFinalizator
 		{
 			if( 1 > 0 )
 			{
-				Tacka a = new Tacka( 2, 3, "A" + i );
+				Tacka a = new Tacka( 2, 3-i, "A" + i );
 				a.prikaziSe();
 				System.out.println();
 				
-				Tacka b = new Tacka( 10, 4, "B" + i );
+				Tacka b = new Tacka( 10, 4+i, "B" + i );
 				b.prikaziSe();
 				System.out.println();
 			}

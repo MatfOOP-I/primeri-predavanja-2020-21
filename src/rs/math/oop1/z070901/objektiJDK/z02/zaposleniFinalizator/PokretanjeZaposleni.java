@@ -26,25 +26,25 @@ class Zaposleni {
 
     @Override
     public boolean equals(Object objekat) {
-        if( objekat == null)
+        if (objekat == null)
             return false;
-        if( this == objekat)
+        if (this == objekat)
             return true;
-        if( ! (objekat instanceof Zaposleni) )
+        if (!(objekat instanceof Zaposleni))
             return false;
         Zaposleni z = (Zaposleni) objekat;
-        return (this.broj == z.broj && this.ime.equals(z.ime) 
-        && this.plata == z.plata );
+        return (this.broj == z.broj && this.ime.equals(z.ime) && this.plata == z.plata);
     }
 
     @Override
     public int hashCode(){
-        return 5 * (new Double(plata)).hashCode() + 7 * ime.hashCode() 
-        + 11 * (new Integer(broj)).hashCode();
+        return 5 * (Double.valueOf(plata)).hashCode() + 7 * ime.hashCode() 
+        + 11 * (Integer.valueOf(broj)).hashCode();
     }
 
+    @Deprecated
     @Override
-    public void finalize() {
+    protected void finalize() {
         System.out.println("FINALIZUJEM! " + ime + ":" + broj);
     }
 }
