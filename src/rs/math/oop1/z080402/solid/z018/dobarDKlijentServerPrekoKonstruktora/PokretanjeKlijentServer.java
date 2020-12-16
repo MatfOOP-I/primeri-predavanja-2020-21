@@ -7,14 +7,14 @@ public class PokretanjeKlijentServer {
       Servis sC = new ServisC();
       Servis sD = new ServisD();
 
-      Klijent ka = new KlijentA(sB);
-      ka.uradiNesto();
+      Klijent kA = new KlijentA(sB);
+      kA.uradiNesto();
 
-      ka = new KlijentA(sC);
-      ka.uradiNesto();
+      kA = new KlijentA(sC);
+      kA.uradiNesto();
 
-      ka = new KlijentA(sD);
-      ka.uradiNesto();
+      kA = new KlijentA(sD);
+      kA.uradiNesto();
    }
 
 }

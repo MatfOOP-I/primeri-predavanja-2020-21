@@ -10,9 +10,9 @@ public class PokreniPovrsine {
       p.setVisina(2);
       double povrsina = p.povrsina();
       if( povrsina == 6 )
-         out.printf("Sve OK! Izracunata povrsina je %f\n", 6.0);
+         out.printf("Sve OK! Izracunata povrsina je %f%n", povrsina);
       else
-         err.printf("Problem! Izracunata povrsina je %f, treba da bude %f\n", povrsina, 6.0);
+         err.printf("Problem! Izracunata povrsina je %f, treba da bude %f%n", povrsina, 6.0);
    }
 
    public static void main(String[] argumenti){

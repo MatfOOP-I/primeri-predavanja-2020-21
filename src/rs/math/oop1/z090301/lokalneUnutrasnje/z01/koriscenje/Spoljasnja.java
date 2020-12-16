@@ -19,7 +19,7 @@ public class Spoljasnja
 		}
 		LokalnaUnutrasnja unutra = new LokalnaUnutrasnja();
 		return "Prikaz j(spolja) = " + j
-				+ " (unutra)"	+ unutra;
+				+ " (unutra) "	+ unutra;
 	}
 	
 	public static void main( String[] args )

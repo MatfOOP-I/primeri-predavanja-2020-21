@@ -27,7 +27,7 @@ public class Spoljasnja2
 		@Override
 		public String toString()
 		{
-			return "i = " + i + ", j=" + j;
+			return "Unutrasnja " + "i = " + i + ", j=" + j;
 		}
 	}
 	

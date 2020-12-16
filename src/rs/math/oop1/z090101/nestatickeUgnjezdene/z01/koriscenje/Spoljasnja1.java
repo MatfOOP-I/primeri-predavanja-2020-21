@@ -11,7 +11,7 @@ public class Spoljasnja1
 		@Override
 		public String toString()
 		{
-			return "i = " + i + ", j=" + j;
+			return "Unutrasnja: " + "i = " + i + ", j=" + j;
 		}
 	}
 	

@@ -21,7 +21,6 @@ public class Zaposleni implements Cloneable {
       this.prezime = prezime;
    }
 
-
    public void povecajPlatu(double zaProcenat) {
       double iznosPovisice = plata * zaProcenat / 100;
       this.plata += iznosPovisice;

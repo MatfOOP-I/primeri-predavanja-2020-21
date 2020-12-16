@@ -6,21 +6,22 @@ public class PokretanjeTryCatch03Ciklus
 	{
 		int i = 12;
 		
+		System.out.println( "Usli smo u ciklus!" );
 		for (int j = 3; j >= -2; j--)
 		{
 			try
 			{
-				System.out.println( "Try block entered " + "i = " + i + " j = " + j );
+				System.out.println( "Usli smo u try blok sa " + "i = " + i + " j = " + j );
 				System.out.println( i / j ); // Divide by 0 - exception thrown
-				System.out.println( "Ending try block" );				
+				System.out.println( "Izlazimo iz try bloka!" );				
 			}
 			catch (ArithmeticException e)
 			{ // Catch the exception
-				System.out.println( "Arithmetic exception caught " );
+				System.out.println( "Uhvacen izuzetak " + e );
 			}
-			System.out.println( "After try block" );
+			System.out.println( "Izasli smo iz try/catch bloka!" );
 		}
-		System.out.println( "After for loop" );		
+		System.out.println( "Izasli smo iz ciklusa!" );		
 		return;
 	}
 }

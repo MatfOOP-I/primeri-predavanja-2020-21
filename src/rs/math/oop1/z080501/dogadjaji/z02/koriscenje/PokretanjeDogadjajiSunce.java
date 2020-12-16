@@ -15,9 +15,9 @@ public class PokretanjeDogadjajiSunce {
    public static void main(String... argumenti) {
       System.out.println("Objekti: ");
       Suncokret suncokret = new Suncokret();
-      System.out.println("suncokret");
+      System.out.println(suncokret);
       NocnaFrajla nocnaFrajla = new NocnaFrajla();
-      System.out.println("nocnafrajla");
+      System.out.println(nocnaFrajla);
       Student petar = new Student("petar");
       System.out.println(petar);
       Student mitar = new Student("mitar");

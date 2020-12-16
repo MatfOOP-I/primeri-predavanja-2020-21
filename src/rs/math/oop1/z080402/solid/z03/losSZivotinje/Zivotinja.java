@@ -13,6 +13,6 @@ public class Zivotinja {
 
    public static void sacuvajDB(Zivotinja z) {
       // naredbe za cuvanje informacija o primerku
-      // klade Zivotinja u bazu podataka
+      // klase Zivotinja u bazu podataka
    }
 }

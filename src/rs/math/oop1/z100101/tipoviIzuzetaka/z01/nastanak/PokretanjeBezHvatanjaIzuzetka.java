@@ -8,6 +8,5 @@ public class PokretanjeBezHvatanjaIzuzetka {
         System.out.println("Pocetak " + "i = " + i + " j = " + j);
         System.out.println(i / j); // Divide by 0 - exception thrown
         System.out.println("kraj");
-        return;
     }
 }

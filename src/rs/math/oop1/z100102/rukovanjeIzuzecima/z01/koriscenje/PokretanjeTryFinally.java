@@ -6,13 +6,13 @@ public class PokretanjeTryFinally {
         int j = 0;
 
         try {
-            System.out.println("Try block entered " + "i = " + i + " j = " + j);
+            System.out.println("Usli smo u try blok sa " + "i = " + i + " j = " + j);
             System.out.println(i / j); // Divide by 0 - exception thrown
-            System.out.println("Ending try block");
+            System.out.println("Izlazimo iz try bloka!");
         } finally {
             System.out.println("U finally bloku smo!");
         }
-        System.out.println("After try block");
+        System.out.println("Izasli smo iz try/finaly bloka!");
         return;
     }
 }

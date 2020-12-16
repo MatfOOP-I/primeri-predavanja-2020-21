@@ -18,8 +18,8 @@ public class Kvadrat extends Pravougaonik {
 
    @Override
    public void setVisina(double visina) {
-      super.setSirina(visina);
       super.setVisina(visina);
+      super.setSirina(visina);
    }
 
 }

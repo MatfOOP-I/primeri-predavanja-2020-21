@@ -8,7 +8,7 @@ public class PokreniKloniranje {
          Zaposleni original = new Zaposleni("Jovan", "Petović", "pripravnik", 300);
          original.setDatumZaposlenja(2017, 2, 14);
          Zaposleni kopija = original.clone();
-         System.out.println("Posel kloniranja, a pre promena");
+         System.out.println("Posle kloniranja, a pre promena");
          System.out.println("original= " + original);
          System.out.println("kopija=   " + kopija);
 

@@ -9,7 +9,7 @@ public class AnonimnaUnutrasnja
 	public String toString()
 	{
 		return "Prikaz (spolja) " + j 
-				+ "(unutra)" +  
+				+ "(unutra) " +  
 		(new Object()
 		{
 			// Detalji unutrasnje klase ...

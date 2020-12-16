@@ -1,6 +1,6 @@
 package rs.math.oop1.z080402.solid.z06.dobarOPovrsine;
 
-public class Pravougaonik implements Oblik{
+public class Pravougaonik implements Mera{
    private double sirina;
    private double visina;
 

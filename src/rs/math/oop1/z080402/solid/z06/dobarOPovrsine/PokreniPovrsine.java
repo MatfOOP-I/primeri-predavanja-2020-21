@@ -20,8 +20,8 @@ public class PokreniPovrsine {
       out.printf("Povrsina pravougaonika je: %f\n\n", p.povrsina());
       sc.close();
 
-      Oblik[] oblici = {k,p};
-      for(Oblik o: oblici){
+      Mera[] oblici = {k,p};
+      for(Mera o: oblici){
          out.printf("Povrsina oblika je: %f\n", o.povrsina());
       }
    }

@@ -2,7 +2,7 @@ package rs.math.oop1.z080402.solid.z06.dobarOPovrsine;
 
 import static java.lang.Math.PI;
 
-public class Krug implements Oblik {
+public class Krug implements Mera {
    private double poluprecnik;
 
    public Krug(double poluprecnik) {

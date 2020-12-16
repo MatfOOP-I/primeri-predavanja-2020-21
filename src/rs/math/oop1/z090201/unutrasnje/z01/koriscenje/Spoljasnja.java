@@ -8,8 +8,7 @@ public class Spoljasnja {
 
         @Override
         public String toString() {
-            Spoljasnja.this.j++;
-            return "j(unutra) = " + j +
+            return "Unutrasnja "+ "j(unutra) = " + j +
                     ", j(spolja) = " + Spoljasnja.this.j;
         }
     }
