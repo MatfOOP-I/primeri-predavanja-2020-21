@@ -1,5 +1,5 @@
 
-class Faktorijel {
+class FaktorijelPokretanje {
 
     static int fakt(int n) {
         if (n == 0 || n == 1)

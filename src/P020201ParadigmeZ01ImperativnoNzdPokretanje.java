@@ -1,8 +1,9 @@
 /*
-  Програм (у виду конзолне апликације) за одређивање највећег заједничког 
-  делиоца за три броја.
-  Програмски код је организован као монолитна целина, у духу императвног програмирања.
-  Коришћена је обележена break наредба за имитирање наредбе безусловног скока.
+Програм (у виду конзолне апликације) за одређивање највећег заједничког делиоца за три броја.
+
+Програмски код је организован као монолитна целина, у духу императвног програмирања.
+
+Коришћена је обележена break наредба за имитирање наредбе безусловног скока.
  */
 
 class PokretanjeImperativnoNzd {
@@ -20,9 +21,8 @@ class PokretanjeImperativnoNzd {
         System.out.println("Трећи број је " + treciBroj);
 
         // одређивање НЗД за први и други број
-        nzdPrviDrugi:
-        for (; ; ) {
-            if (drugiBroj == 0 || prviBroj==0)
+        nzdPrviDrugi: for (;;) {
+            if (drugiBroj == 0 || prviBroj == 0)
                 break nzdPrviDrugi;
             // размени бројеве тако да други број буде већи од првог
             if (prviBroj > drugiBroj) {
@@ -33,11 +33,10 @@ class PokretanjeImperativnoNzd {
             // нови пар бројева су дотадашњи мањи и разлика између већег и мањег
             drugiBroj = drugiBroj % prviBroj;
         }
-        if( prviBroj == 0)
+        if (prviBroj == 0)
             prviBroj = drugiBroj;
         // одређивање НЗД за НЗД прва два броја и трећи број
-        nzdNadPrvaDvaTreci:
-        for (; ; ) {
+        nzdNadPrvaDvaTreci: for (;;) {
             // ако су бројеви исти, НЗД је ма који од њих
             if (prviBroj == 0 || treciBroj == 0)
                 break nzdNadPrvaDvaTreci;
@@ -52,7 +51,7 @@ class PokretanjeImperativnoNzd {
             // "преживљавају" мањи од два броја и остатак при дељењу између већег и мењег
             treciBroj = treciBroj % prviBroj;
         }
-        if (prviBroj == 0) 
+        if (prviBroj == 0)
             prviBroj = treciBroj;
         // приказ резултата
         System.out.println("НЗД ова три броја је " + prviBroj);
