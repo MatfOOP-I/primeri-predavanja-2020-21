@@ -1,6 +1,6 @@
 package rs.math.oop1.z110101.tipoviIzuzetaka.z02.indeksVanGranica;
 
-public class PokretanjeIndeksVanGranica2 {
+public class PokretanjeIndeksVanGranicaHvatanje {
 
    public static void main(String[] args) {
       long x[] = { 1, 2, 3, 4, 5 };

@@ -1,3 +1,4 @@
+// Opcijom -ea pri poretanju JVM se omogucuju izuzetci
 package rs.math.oop1.z110201.tvrdnje.z01.povrsina;
 
 import java.util.Scanner;

@@ -2,7 +2,7 @@ package rs.math.oop1.z110102.rukovanjeIzuzecima.z05.metodiBlokovi;
 
 import java.io.IOException;
 
-public class PokretanjeTryCatch05Block
+public class PokretanjeTryCatch06Block
 {
 	// Divide method
 	public static int divide(int[] array, int index) {
@@ -39,36 +39,18 @@ public class PokretanjeTryCatch05Block
 			System.out.println( "result = " + divide( x, 1 ) ); // Index error
 			
 		}
-		catch (ArithmeticException e)
+		catch (ArithmeticException|ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println( "Arithmetic exception caught in main()" );
+			System.out.println( "Arithmetic exception or Index out of bounds exception caught in main()" );
 		}
-		catch (ArrayIndexOutOfBoundsException e)
+		catch (Exception e)
 		{
-			System.out.println( "Index-out-of-bounds exception caught in main()" );
+			System.out.println( "Exception caught in main()" );
 		}
 		
 		System.out.println( "Outside first try block in main()" );
 		System.out.println( "\nPress Enter to exit" );
 		
-		// This try block is just to pause the program before returning
-		try
-		{
-			System.out.println( "In second try block in main()" );
-			System.in.read(); // Pauses waiting for input...
-			return;
-			
-		}
-		catch (IOException e)
-		{ // The read() method can throw exceptions
-			System.out.println( "I/O exception caught in main()" );
-		}
-		finally
-		{ // This will always be executed
-			System.out.println( "finally block for second try block in main()" );
-		}
-		
-		System.out.println( "Code after second try block in main()" );
 	}
 	
 }
