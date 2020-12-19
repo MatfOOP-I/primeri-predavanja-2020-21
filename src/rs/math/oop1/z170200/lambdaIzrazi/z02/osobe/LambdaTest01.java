@@ -40,15 +40,15 @@ public class LambdaTest01 {
 
 
     public static void main(String[] args) {
-        printPersonsOlderThan(Person.LJUDI, 50);
+        printPersonsOlderThan(Person.OSOBE, 50);
         System.out.println();
-        printPersonsOlderThan(Person.LJUDI, 80);
+        printPersonsOlderThan(Person.OSOBE, 80);
         System.out.println();
-        printPersonsWithinAgeRange(Person.LJUDI, 80, 85);
+        printPersonsWithinAgeRange(Person.OSOBE, 80, 85);
         System.out.println();
-        printPersonsWhereEmailContains(Person.LJUDI, "disney");
+        printPersonsWhereEmailContains(Person.OSOBE, "disney");
         System.out.println();
-        printFemalePersonsWhereEmailContains(Person.LJUDI, "disney");
+        printFemalePersonsWhereEmailContains(Person.OSOBE, "disney");
 
     }
 

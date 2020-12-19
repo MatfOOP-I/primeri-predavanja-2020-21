@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OsobePretraga02LokalnaKlasaiPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170200.lambdaIzrazi.z01.osobe.OsobePretraga02LokalnaKlasaiPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch OsobePretraga01MetodiPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170200.lambdaIzrazi.z01.osobe.OsobePretraga01MetodiPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch PokretanjePovrsine",
             "request": "launch",
             "mainClass": "rs.math.oop1.z110201.tvrdnje.z01.povrsina.PokretanjePovrsine",
