@@ -6,6 +6,118 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch KutijaPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130300.generickiTip.z04.kutija.KutijaPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130300.generickiTip.z03.kutija.KutijaPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130300.generickiTip.z02.kutija.KutijaPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130300.generickiTip.z01.kutija.KutijaPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeGodisnjaDoba",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z120101.enumerisaniTip.z02.godisnjaDoba.PokretanjeGodisnjaDoba",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeVelicina",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z120101.enumerisaniTip.z01.velicina.PokretanjeVelicina",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProsekClanovaNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110104.izuzeciPreporuke.z01.trebaNeTreba.ProsekClanovaNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeSaberiOduzmi",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110103.izuzeciIzbacivanje.z05.matrice.PokretanjeSaberiOduzmi",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeOkretanjeStek",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110103.izuzeciIzbacivanje.z03.stekPrekoNizaKorisnickiIzuzetak.PokretanjeOkretanjeStek",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeDefinisiSvojeIzuzetke",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110103.izuzeciIzbacivanje.z02.sopstveni.PokretanjeDefinisiSvojeIzuzetke",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryBlock",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110103.izuzeciIzbacivanje.z01.sopstveni.PokretanjeTryBlock",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryCatch05Block",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z05.metodiBlokovi.PokretanjeTryCatch05Block",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryCatch04Ciklus",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z04.ciklus.PokretanjeTryCatch04Ciklus",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryCatch03Ciklus",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z03.ciklus.PokretanjeTryCatch03Ciklus",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryCatch",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z02.koriscenje.PokretanjeTryCatch",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeIndeksVanGranica",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110101.tipoviIzuzetaka.z02.indeksVanGranica.PokretanjeIndeksVanGranica",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch PodrazumevaniMetodiPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop1.z170408.z01.podrazumevaniMetodi.PodrazumevaniMetodiPokretanje",

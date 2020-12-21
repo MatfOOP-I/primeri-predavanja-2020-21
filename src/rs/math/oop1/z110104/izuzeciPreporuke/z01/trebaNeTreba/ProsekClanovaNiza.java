@@ -12,7 +12,7 @@ public class ProsekClanovaNiza {
         s /= a.length;
         long trajanje = System.nanoTime() - pocetak;
         System.out.println("Prosek je " + s
-                + ", a trajanje: " + trajanje / 1000000.0 + "ms.");
+                + ", a trajanje: " + trajanje / 1_000_000.0 + "ms.");
         // OVAKO NE TREBA RADITI!
         pocetak = System.nanoTime();
         s = 0;
@@ -23,7 +23,7 @@ public class ProsekClanovaNiza {
         } catch (IndexOutOfBoundsException exp) {
             trajanje = System.nanoTime() - pocetak;
             System.out.println("Prosek je " + ((s / (i - 1))) +
-                    ", a trajanje: " + trajanje / 1000000.0 + "ms.");
+                    ", a trajanje: " + trajanje / 1_000_000.0 + "ms.");
         }
     }
 

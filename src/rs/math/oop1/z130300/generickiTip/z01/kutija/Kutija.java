@@ -1,6 +1,6 @@
 package rs.math.oop1.z130300.generickiTip.z01.kutija;
 
-public class Box
+public class Kutija
 {
 	private Object uKutiji;
 	

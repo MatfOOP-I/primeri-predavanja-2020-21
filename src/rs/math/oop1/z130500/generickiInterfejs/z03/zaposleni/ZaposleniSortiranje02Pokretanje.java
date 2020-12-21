@@ -5,7 +5,7 @@ import rs.math.oop1.z100401.anonimneUnutrasnje.z02.zaposleniSortiranje.Zaposleni
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class EmployeeSortTest2 {
+public class ZaposleniSortiranje02Pokretanje {
     public static void main(String[] args) {
         Zaposleni[] osoblje = new Zaposleni[4];
 
@@ -32,7 +32,7 @@ public class EmployeeSortTest2 {
         Arrays.sort(osoblje, new Comparator<Zaposleni>() {
             @Override
             public int compare(Zaposleni e1, Zaposleni e2) {
-                   return - e1.getIme().compareTo(e2.getIme());
+                return -e1.getIme().compareTo(e2.getIme());
             }
         });
         for (Zaposleni e : osoblje)
@@ -51,13 +51,5 @@ public class EmployeeSortTest2 {
         });
         for (Zaposleni e : osoblje)
             System.out.println(e);
-
-        // Zasad ovo nismo detaljno objasnili - ali radi :)
-        System.out.println("-Po imenu obratno (lambda)-");
-        Arrays.sort(osoblje, (e1, e2) ->
-                e2.getIme().compareTo(e1.getIme()) );
-        for (Zaposleni e : osoblje)
-            System.out.println(e);
-
     }
 }

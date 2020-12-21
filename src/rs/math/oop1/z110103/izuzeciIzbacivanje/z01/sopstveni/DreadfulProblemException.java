@@ -6,6 +6,7 @@ public class DreadfulProblemException extends Exception
   //Default constructor
 	public DreadfulProblemException()
 	{
+		super();
 	} 
 	
 	

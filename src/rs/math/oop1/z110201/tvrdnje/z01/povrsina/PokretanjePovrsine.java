@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class PokretanjePovrsine {
 
-   public static double PovrsineKruga( double poluprecnik)
+   private static double PovrsineKruga(double poluprecnik)
    {
       assert poluprecnik > 0 : "Negativan poluprecnik";
       return poluprecnik * poluprecnik * Math.PI;
@@ -17,7 +17,8 @@ public class PokretanjePovrsine {
       System.out.print("Poluprecnik kruga: " );
       Scanner citac = new Scanner(System.in);
       double r = citac.nextDouble();
-      System.out.println( "Povrsina kruga: " + PovrsineKruga(r));
+      citac.close();
+      System.out.println("Povrsina kruga: " + PovrsineKruga(r));
    }
 
 }

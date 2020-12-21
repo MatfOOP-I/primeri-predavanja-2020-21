@@ -1,10 +1,10 @@
-package rs.math.oop1.z130500.generickiInterfejs.z01.kljucVrednost;
+package rs.math.oop1.z130300.generickiTip.z04.kutija;
 
-public class Box<T>
+public class Kutija<T>
 {
 	private T uKutiji;
 	
-	public Box(T t)
+	public Kutija(T t)
 	{
 		uKutiji = t;
 	}

@@ -5,6 +5,7 @@ public class PokretanjeTryFinally {
         int i = 11;
         int j = 0;
 
+        System.out.println("Ulazimo u try/finaly blok!");
         try {
             System.out.println("Usli smo u try blok sa " + "i = " + i + " j = " + j);
             System.out.println(i / j); // Divide by 0 - exception thrown
@@ -13,6 +14,5 @@ public class PokretanjeTryFinally {
             System.out.println("U finally bloku smo!");
         }
         System.out.println("Izasli smo iz try/finaly bloka!");
-        return;
     }
 }

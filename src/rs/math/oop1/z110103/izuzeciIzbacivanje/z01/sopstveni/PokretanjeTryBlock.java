@@ -4,6 +4,28 @@ import java.io.IOException;
 
 public class PokretanjeTryBlock
 {
+	// Divide method
+	public static int divide(int[] array, int index) throws DreadfulProblemException {
+		try {
+			System.out.println("\nFirst try block in divide() entered");
+			array[index + 2] = array[index] / array[index + 1];
+			System.out.println("Code at end of first try block in divide()");
+			return array[index + 2];
+		} catch (ArithmeticException|ArrayIndexOutOfBoundsException  e) {
+			System.err.println( e.getClass().getName() + " caught in divide()\n" + "\nMessage in exception object:\n\t"
+					+ e.getMessage());
+			System.err.println("\nStack trace output:\n");
+			e.printStackTrace();
+			System.err.println("\nEnd of stack trace output\n");
+			throw e;
+		} catch (Exception e) {
+			DreadfulProblemException dpe = new DreadfulProblemException(e.getMessage());
+			throw dpe;
+		} finally {
+			System.out.println("finally block in divide()");
+		}
+	}
+
 	public static void main( String[] args )
 	{
 		int[] x = { 10, 5, 0 }; // Array of three integers
@@ -53,43 +75,4 @@ public class PokretanjeTryBlock
 		System.out.println( "Code after second try block in main()" );
 	}
 	
-	// Divide method
-	public static int divide( int[] array, int index ) throws DreadfulProblemException
-	{
-		try
-		{
-			System.out.println( "\nFirst try block in divide() entered" );
-			array[index + 2] = array[index] / array[index + 1];
-			System.out.println( "Code at end of first try block in divide()" );
-			return array[index + 2];
-			
-		}
-		catch (ArithmeticException e)
-		{
-			System.err.println( "Arithmetic exception caught in divide()\n"
-					+ "\nMessage in exception object:\n\t" + e.getMessage() );
-			System.err.println( "\nStack trace output:\n" );
-			e.printStackTrace();
-			System.err.println( "\nEnd of stack trace output\n" );
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			System.err.println( "Index-out-of-bounds exception caught in divide()\n"
-					+ "\nMessage in exception object:\n\t" + e.getMessage() );
-			System.err.println( "\nStack trace output:\n" );
-			e.printStackTrace();
-			System.out.println( "\nEnd of stack trace output\n" );
-		}
-		catch( Exception e)
-		{
-			DreadfulProblemException dpe = new DreadfulProblemException( e.getMessage() );
-			throw dpe;
-		}
-		finally
-		{
-			System.out.println( "finally block in divide()" );
-		}
-		System.out.println( "Executing code after try block in divide()" );
-		return array[index + 2];
-	}
 }

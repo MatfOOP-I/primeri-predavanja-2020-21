@@ -7,6 +7,7 @@ public class DeljenjeNulomException extends Exception
 	// Default Constructor
 	public DeljenjeNulomException()
 	{
+		super();
 	}
 
 	// Standard constructor

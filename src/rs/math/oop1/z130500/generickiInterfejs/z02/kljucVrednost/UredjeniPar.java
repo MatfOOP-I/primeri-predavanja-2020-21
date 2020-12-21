@@ -1,11 +1,11 @@
-package rs.math.oop1.z130500.generickiInterfejs.z01.kljucVrednost;
+package rs.math.oop1.z130500.generickiInterfejs.z02.kljucVrednost;
 
-public class OrderedPair<K, V> implements Pair<K, V>
+public class UredjeniPar<K, V> implements Par<K, V>
 {
 	private K key;
 	private V value;
 	
-	public OrderedPair( K key, V value )
+	public UredjeniPar( K key, V value )
 	{
 		this.key = key;
 		this.value = value;
@@ -22,10 +22,11 @@ public class OrderedPair<K, V> implements Pair<K, V>
 	{
 		return value;
 	}
-	
+
 	@Override
 	public String toString()
 	{
-		return "(" + getKey() + "," + getValue() + ")";
+		return "(" + getKey() + "," + getValue()  +")";
 	}
+
 }

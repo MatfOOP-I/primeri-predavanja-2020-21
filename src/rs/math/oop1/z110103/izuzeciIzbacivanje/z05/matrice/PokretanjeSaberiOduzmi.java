@@ -63,8 +63,7 @@ public class PokretanjeSaberiOduzmi {
          throw new NekompatibilneDimenzijeMatriceException(a.length, b.length);
       for (int i = 0; i < a.length; i++)
          if (a[i].length != b[i].length)
-            throw new NekompatibilneDimenzijeMatriceException(a[i].length,
-                  b[i].length);
+            throw new NekompatibilneDimenzijeMatriceException(a[i].length, b[i].length);
       double[][] c = new double[a.length][a[0].length];
       for (int i = 0; i < c.length; i++)
          for (int j = 0; j < c[i].length; j++)
@@ -86,8 +85,7 @@ public class PokretanjeSaberiOduzmi {
          throw new NekompatibilneDimenzijeMatriceException(a.length, b.length);
       for (int i = 0; i < a.length; i++)
          if (a[i].length != b[i].length)
-            throw new NekompatibilneDimenzijeMatriceException(a[i].length,
-                  b[i].length);
+            throw new NekompatibilneDimenzijeMatriceException(a[i].length, b[i].length);
       double[][] c = new double[a.length][a[0].length];
       for (int i = 0; i < c.length; i++)
          for (int j = 0; j < c[i].length; j++)
@@ -97,23 +95,21 @@ public class PokretanjeSaberiOduzmi {
 
    public static void main(String[] args) {
       try {
-         double[][] a = {{1, 2, 3}, {3, 4}};
-         //a = ucitaj();
+         double[][] a = { { 1, 2, 3 }, { 3, 4 } };
+         // a = ucitaj();
          System.out.println("A je: ");
          prikazi(a);
-         double[][] b = {{1, 2, 3.5}, {3, 4, 5}};
-         //b = ucitaj();
+         double[][] b = { { 1, 2, 3.5 }, { 3, 4, 5 } };
+         // b = ucitaj();
          System.out.println("B je: ");
          prikazi(b);
          System.out.println("Zbir je: ");
          prikazi(saberi(a, b));
          System.out.println("Razlika je: ");
          prikazi(oduzmi(a, b));
-      } catch ( //NegativnaDimenzijaMatriceException |
-            NekompatibilneDimenzijeMatriceException |
-                  MatricaNePostojiException |
-                  DvodimenzionalniNizNijeMatricaException
-                  e) {
+      } catch ( // NegativnaDimenzijaMatriceException |
+            NekompatibilneDimenzijeMatriceException | MatricaNePostojiException
+            | DvodimenzionalniNizNijeMatricaException e) {
          System.out.println("Doslo je do greske " + e);
          e.printStackTrace();
       }

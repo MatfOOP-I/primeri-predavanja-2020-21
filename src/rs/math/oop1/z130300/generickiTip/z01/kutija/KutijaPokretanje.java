@@ -1,12 +1,12 @@
 package rs.math.oop1.z130300.generickiTip.z01.kutija;
 
-public class BoxTest
+public class KutijaPokretanje
 {
 	
 	
 	public static void main( String[] args )
 	{
-		Box b1 = new Box();
+		Kutija b1 = new Kutija();
 		System.out.println( b1.get() );
 		b1.set( "baba" );
 		System.out.println( b1.get() );

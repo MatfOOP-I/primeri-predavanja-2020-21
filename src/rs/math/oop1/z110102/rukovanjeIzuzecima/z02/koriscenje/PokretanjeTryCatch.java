@@ -7,6 +7,7 @@ public class PokretanjeTryCatch
 		int i = 13;
 		int j = 0;
 		
+		System.out.println("Ulazimo u try/catch blok!");
 		try
 		{
 			System.out.println( "Usli smo u try blok sa " + "i = " + i + " j = " + j );
@@ -14,10 +15,9 @@ public class PokretanjeTryCatch
 			System.out.println( "Izlazimo iz try bloka!" );			
 		}
 		catch (ArithmeticException e)
-		{ // Catch the exception
+		{ 
 			System.out.println( "Uhvacen je izuzetak " + e );
 		}
 		System.out.println( "Izasli smo iz try/catch bloka!" );
-		return;
 	}
 }
