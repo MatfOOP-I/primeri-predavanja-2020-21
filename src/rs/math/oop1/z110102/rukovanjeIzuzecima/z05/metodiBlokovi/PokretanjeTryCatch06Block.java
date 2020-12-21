@@ -5,7 +5,7 @@ import java.io.IOException;
 public class PokretanjeTryCatch06Block
 {
 	// Divide method
-	public static int divide(int[] array, int index) {
+	public static int podeli(int[] array, int index) {
 		try {
 			System.out.println("\nFirst try block in divide() entered");
 			array[index + 2] = array[index] / array[index + 1];
@@ -32,11 +32,11 @@ public class PokretanjeTryCatch06Block
 		try
 		{
 			System.out.println( "First try block in main() entered" );
-			System.out.println( "result = " + divide( x, 0 ) ); // No error
+			System.out.println( "result = " + podeli( x, 0 ) ); // No error
 			x[1] = 0; // Will cause a divide by zero
-			System.out.println( "result = " + divide( x, 0 ) ); // Arithmetic error
+			System.out.println( "result = " + podeli( x, 0 ) ); // Arithmetic error
 			x[1] = 1; // Reset to prevent divide by zero
-			System.out.println( "result = " + divide( x, 1 ) ); // Index error
+			System.out.println( "result = " + podeli( x, 1 ) ); // Index error
 			
 		}
 		catch (ArithmeticException|ArrayIndexOutOfBoundsException e)

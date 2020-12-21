@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PokretanjeTryCatch07Block",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z05.metodiBlokovi.PokretanjeTryCatch07Block",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeTryFinally",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z01.koriscenje.PokretanjeTryFinally",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch MinMaxPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z04.minMax.MinMaxPokretanje",
