@@ -11,9 +11,8 @@ public class SamorastuciNiz<E> {
     private void obezbediKapacitetPomocni(int noviKapacitet) {
         if (noviKapacitet > vratiKapacitet()) {
             int inkrementKapaciteta = (uvecanjeDimenzije>0)? vratiKapacitet() + uvecanjeDimenzije: 2 *vratiKapacitet();
-            noviKapacitet = (noviKapacitet>inkrementKapaciteta)? noviKapacitet:inkrementKapaciteta;
+            noviKapacitet = (noviKapacitet > inkrementKapaciteta) ? noviKapacitet : inkrementKapaciteta;
             E[] noviNiz = (E[]) new Object[noviKapacitet];
-            // probati sa arraycopy...
             for (int i = 0; i < elementi.length; i++)
                 noviNiz[i] = elementi[i];
             elementi = noviNiz;

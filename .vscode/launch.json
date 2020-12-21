@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinMaxPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z04.minMax.MinMaxPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZaposleniSortiranje03Pokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z03.zaposleni.ZaposleniSortiranje03Pokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZaposleniSortiranje02Pokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z03.zaposleni.ZaposleniSortiranje02Pokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZaposleniSortiranje01Pokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z03.zaposleni.ZaposleniSortiranje01Pokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjeniParPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500.generickiInterfejs.z01.kljucVrednost.UredjeniParPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch KutijaPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop1.z130300.generickiTip.z04.kutija.KutijaPokretanje",

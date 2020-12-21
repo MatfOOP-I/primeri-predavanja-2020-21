@@ -2,29 +2,6 @@ package rs.math.oop1.z130500.generickiInterfejs.z03.zaposleni;
 
 import java.util.Arrays;
 
-public class ZaposleniSortiranje01Pokretanje {
-	public static void main(String[] args) {
-		Zaposleni[] osoblje = new Zaposleni[4];
-
-		osoblje[0] = new Zaposleni("Marko Markovic", 85000);
-		osoblje[1] = new Zaposleni("Janko Jankovic", 45000);
-		osoblje[2] = new Zaposleni("Tony Tester", 20000);
-		osoblje[3] = new Zaposleni("Mickey Mouse", 45000);
-
-		System.out.println("Before sort");
-		for (Zaposleni e : osoblje)
-			System.out.println(e);
-
-		Arrays.sort(osoblje);
-
-		// print out information about all Zaposleni objects
-		System.out.println("===================================");
-		System.out.println("After sort");
-		for (Zaposleni e : osoblje)
-			System.out.println(e);
-	}
-}
-
 class Zaposleni implements Comparable<Zaposleni> {
 	private String imePrezime;
 	private double plata;
@@ -63,9 +40,8 @@ class Zaposleni implements Comparable<Zaposleni> {
 	}
 
 	@Override
-	public int hashCode()
-	{
-		return 3 * imePrezime.hashCode() + 7 * (Double.valueOf(plata) ).hashCode();
+	public int hashCode() {
+		return 3 * imePrezime.hashCode() + 7 * (Double.valueOf(plata)).hashCode();
 	}
 
 	@Override
@@ -74,6 +50,30 @@ class Zaposleni implements Comparable<Zaposleni> {
 			return -1;
 		if (plata < e.plata)
 			return 1;
-		return imePrezime.compareTo(e.imePrezime);
+		return -1;
 	}
 }
+
+public class ZaposleniSortiranje01Pokretanje {
+	public static void main(String[] args) {
+		Zaposleni[] osoblje = new Zaposleni[4];
+
+		osoblje[0] = new Zaposleni("Marko Markovic", 85000);
+		osoblje[1] = new Zaposleni("Janko Jankovic", 45000);
+		osoblje[2] = new Zaposleni("Tony Tester", 20000);
+		osoblje[3] = new Zaposleni("Mickey Mouse", 45000);
+
+		System.out.println("Before sort");
+		for (Zaposleni e : osoblje)
+			System.out.println(e);
+
+		Arrays.sort(osoblje);
+
+		// print out information about all Zaposleni objects
+		System.out.println("===================================");
+		System.out.println("After sort");
+		for (Zaposleni e : osoblje)
+			System.out.println(e);
+	}
+}
+

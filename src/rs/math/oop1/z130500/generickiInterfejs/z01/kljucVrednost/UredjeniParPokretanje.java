@@ -10,7 +10,8 @@ public class UredjeniParPokretanje {
 		UredjeniPar<String, Kutija<Integer>> op3 = new UredjeniPar<>("prosti", new Kutija<Integer>(2977));
 		Par<String, Kutija<Integer>> p3 = op3;
 		System.out.println(p3);
-		Par<Par<Integer, Kutija<Double>>, Par<String, String>> p4 = new UredjeniPar<Par<Integer, Kutija<Double>>, Par<String, String>>(
+		Par<Par<Integer, Kutija<Double>>, Par<String, String>> p4 = 
+		new UredjeniPar<Par<Integer, Kutija<Double>>, Par<String, String>>(
 				new UredjeniPar<Integer, Kutija<Double>>(2, new Kutija<>(3.5)),
 				new UredjeniPar<String, String>("miki", "maus"));
 		System.out.println(p4);
