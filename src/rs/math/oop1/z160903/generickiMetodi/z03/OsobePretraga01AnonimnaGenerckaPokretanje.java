@@ -1,13 +1,12 @@
-package rs.math.oop1.z170200.lambdaIzrazi.z02.osobePretragaPrikazGeneric;
+package rs.math.oop1.z160903.generickiMetodi.z03;
 
 import java.util.List;
-import java.util.function.Predicate;
 
-public class OsobePretraga02AnonimnaPredicatePokretanje {
+public class OsobePretraga01AnonimnaGenerckaPokretanje {
 
-    public static <T>  void prikazi(Iterable<T> prolazna, Predicate<T> kriterijum) {
+    public static <T>  void prikazi(Iterable<T> prolazna, KriterijumPretrage<T> kriterijum) {
         for (T elem : prolazna) {
-            if (kriterijum.test(elem)) {
+            if (kriterijum.proveri(elem)) {
                 System.out.println(elem);
             }
         }
@@ -17,33 +16,33 @@ public class OsobePretraga02AnonimnaPredicatePokretanje {
         for (Osoba o : Osoba.LIKOVI_CRTANI)
             o.prikazi();
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
-            public boolean test(Osoba o) {
+        prikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
+            public boolean proveri(Osoba o) {
                 return o.getBrojGodina() >= 50;
             }
         });
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
-            public boolean test(Osoba o) {
+        prikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
+            public boolean proveri(Osoba o) {
                 return o.getBrojGodina() >= 80;
             }
         });
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
-            public boolean test(Osoba o) {
+        prikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
+            public boolean proveri(Osoba o) {
                 return o.getBrojGodina() >= 80 && o.getBrojGodina() <= 85;
             }
         });
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
+        prikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
 
-            public boolean test(Osoba o) {
+            public boolean proveri(Osoba o) {
                 return o.getEmailAdresa().indexOf("disney") >= 0;
             }
         });
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
-            public boolean test(Osoba o) {
+        prikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
+            public boolean proveri(Osoba o) {
                 return o.getPol() == Osoba.Pol.ZENA && o.getEmailAdresa().indexOf("disney") >= 0;
             }
         });

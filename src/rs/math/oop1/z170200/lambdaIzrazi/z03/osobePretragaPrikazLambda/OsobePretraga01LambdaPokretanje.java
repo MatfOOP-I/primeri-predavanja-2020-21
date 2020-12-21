@@ -4,8 +4,8 @@ import java.util.List;
 
 public class OsobePretraga01LambdaPokretanje {
 
-    public static <T> void prikazi(List<T> lista, KriterijumPretrage<T> kriterijum) {
-        for (T elem : lista) {
+    public static <T> void prikazi(Iterable<T> prolazna, KriterijumPretrage<T> kriterijum) {
+        for (T elem : prolazna) {
             if (kriterijum.proveri(elem)) {
                 System.out.println(elem);
             }

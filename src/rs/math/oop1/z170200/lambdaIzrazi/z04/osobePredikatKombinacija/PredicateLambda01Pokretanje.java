@@ -5,8 +5,8 @@ import java.util.function.Predicate;
 
 public class PredicateLambda01Pokretanje {
 
-    public static <T> void prikazi(List<T> lista, Predicate<T> predikat) {
-        for (T elem : lista) {
+    public static <T> void prikazi(Iterable<T> prolazna, Predicate<T> predikat) {
+        for (T elem : prolazna) {
             if (predikat.test(elem)) {
                 System.out.println(elem);
             }

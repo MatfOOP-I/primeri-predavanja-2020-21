@@ -8,8 +8,8 @@ import static java.lang.System.*;
 
 public class OsobePretragaObrada01LambdaPokretanje {
 
-    public static <T> void obradi(List<T> lista, Predicate<T> predikat, Consumer<T> potrosac) {
-        for (T elem : lista) {
+    public static <T> void obradi(Iterable<T> prolazna, Predicate<T> predikat, Consumer<T> potrosac) {
+        for (T elem : prolazna) {
             if (predikat.test(elem)) {
                 potrosac.accept(elem);
             }

@@ -9,9 +9,9 @@ import static java.lang.System.*;
 
 public class OsobePretragaMapiranjeObrada01Pokretanje {
 
-    public static <X,Y> void obradiMapiraj(List<X> lista, Predicate<X> predikat, Function<X,Y> preslikavanje,
+    public static <X,Y> void obradiMapiraj(Iterable<X> prolazna, Predicate<X> predikat, Function<X,Y> preslikavanje,
             Consumer<Y> potrosac) {
-        for (X elem : lista) {
+        for (X elem : prolazna) {
             if (predikat.test(elem)) {
                 Y medjuRezultat = preslikavanje.apply(elem);
                 potrosac.accept(medjuRezultat);

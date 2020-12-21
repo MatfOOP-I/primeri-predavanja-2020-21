@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PodrazumevaniMetodiPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170408.z01.podrazumevaniMetodi.PodrazumevaniMetodiPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZaposleniSortiranje02Pokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170200.lambdaIzrazi.z01.zaposleniSortiranje.ZaposleniSortiranje02Pokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZaposleniSortiranje01Pokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170200.lambdaIzrazi.z01.zaposleniSortiranje.ZaposleniSortiranje01Pokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokreniNzdTokaCelihBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z170503.z09.nzdTokaCelihBrojeva.PokreniNzdTokaCelihBrojeva",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapTest2",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160802.katalozi.z01.drvoKatalog.MapTest2",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch OsobePretragaMapiranjeObrada01Pokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop1.z170200.lambdaIzrazi.z06.osobePredicateFunctionConsumer.OsobePretragaMapiranjeObrada01Pokretanje",
