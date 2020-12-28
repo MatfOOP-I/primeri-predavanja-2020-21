@@ -6,16 +6,16 @@
  * датотеке која у себи садржи методу main.
  */
 
-class CeoBroj4 {
+class P050402ObjektniTipoviZ03CeoBrojImutabilni {
     // вредност датог целог броја
     int vrednostBroja;
 
     // конструктор
-    CeoBroj4() {
+    P050402ObjektniTipoviZ03CeoBrojImutabilni() {
     }
 
     // конструктор
-    CeoBroj4(int vrednost) {
+    P050402ObjektniTipoviZ03CeoBrojImutabilni(int vrednost) {
 
         vrednostBroja = vrednost;
     }
@@ -27,31 +27,31 @@ class CeoBroj4 {
     }
 
     // одређивање НЗД датог броја и другог целог броја
-    CeoBroj4 promeniZnak() {
-        return new CeoBroj4(-vrednostBroja);
+    P050402ObjektniTipoviZ03CeoBrojImutabilni promeniZnak() {
+        return new P050402ObjektniTipoviZ03CeoBrojImutabilni(-vrednostBroja);
     }
 
-    CeoBroj4 saberi(CeoBroj4 sabirak) {
-        return new CeoBroj4(vrednostBroja + sabirak.vrednostBroja);
+    P050402ObjektniTipoviZ03CeoBrojImutabilni saberi(P050402ObjektniTipoviZ03CeoBrojImutabilni sabirak) {
+        return new P050402ObjektniTipoviZ03CeoBrojImutabilni(vrednostBroja + sabirak.vrednostBroja);
     }
 
-    CeoBroj4 oduzmi(CeoBroj4 umanjilac) {
-        return new CeoBroj4(vrednostBroja - umanjilac.vrednostBroja);
+    P050402ObjektniTipoviZ03CeoBrojImutabilni oduzmi(P050402ObjektniTipoviZ03CeoBrojImutabilni umanjilac) {
+        return new P050402ObjektniTipoviZ03CeoBrojImutabilni(vrednostBroja - umanjilac.vrednostBroja);
     }
 
-    boolean jednak(CeoBroj4 drugi) {
+    boolean jednak(P050402ObjektniTipoviZ03CeoBrojImutabilni drugi) {
         return vrednostBroja == drugi.vrednostBroja;
     }
 
-    boolean manji(CeoBroj4 drugi) {
+    boolean manji(P050402ObjektniTipoviZ03CeoBrojImutabilni drugi) {
         return vrednostBroja < drugi.vrednostBroja;
     }
 
-    boolean manjiIliJednak(CeoBroj4 drugi) {
+    boolean manjiIliJednak(P050402ObjektniTipoviZ03CeoBrojImutabilni drugi) {
         return manji(drugi) || jednak(drugi);
     }
 
-    boolean veci(CeoBroj4 drugi) {
+    boolean veci(P050402ObjektniTipoviZ03CeoBrojImutabilni drugi) {
         return !manjiIliJednak(drugi);
     }
 
@@ -61,7 +61,7 @@ class PokretanjeCeoBroj2 {
     // улазна тачка програма
     public static void main(String[] args) {
 
-        CeoBroj4 cb = new CeoBroj4();
+        P050402ObjektniTipoviZ03CeoBrojImutabilni cb = new P050402ObjektniTipoviZ03CeoBrojImutabilni();
         System.out.println(cb.vrednostBroja);
 
         // System.out.println("---");

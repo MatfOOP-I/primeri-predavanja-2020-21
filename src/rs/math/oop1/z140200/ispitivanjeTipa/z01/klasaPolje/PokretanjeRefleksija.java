@@ -46,9 +46,9 @@ public class PokretanjeRefleksija
 	
 	public static void main( String[] args )
 	{
-		Klasa1 p1 = new Klasa2();
 		Class<?> k1 = null;
-		k1 = p1.getClass();
+		// Klasa1 p1 = new Klasa2();
+		//k1 = p1.getClass();
 		//k1 = Klasa1.class;
 		try
 		{
@@ -57,6 +57,7 @@ public class PokretanjeRefleksija
 		catch (ClassNotFoundException e)
 		{
 			e.printStackTrace();
+			return;
 		}
 		System.out.println( k1.getName() );
 		Class<?>[] implementira1 = k1.getInterfaces();
@@ -74,10 +75,10 @@ public class PokretanjeRefleksija
 		System.out.println();
 		
 		System.out.println();
-		Class k0 = k1.getSuperclass();
+		Class<?> k0 = k1.getSuperclass();
 		System.out.println( k0.getName() );
-		Class[] implementira0 = k0.getInterfaces();
-		for( Class i: implementira0)
+		Class<?>[] implementira0 = k0.getInterfaces();
+		for( Class<?> i: implementira0)
 			System.out.print( i.getName() + " " );
 		Field[] polja0 =  k0.getDeclaredFields();
 		System.out.println();

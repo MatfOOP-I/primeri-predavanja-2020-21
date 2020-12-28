@@ -6,6 +6,153 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PokretanjeRefleksijaGenerici",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140600.metodPristup.z04.generici.PokretanjeRefleksijaGenerici",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksijaPozivMetoda",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140600.metodPristup.z01.poziv.PokretanjeRefleksijaPozivMetoda",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeStek",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160904.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe.PokretanjeStek",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeOsobePretraga01Metodi",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160903.generickiMetodi.z02.osobePretragaPrikaz.PokretanjeOsobePretraga01Metodi",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeOperacijeSpajanjaIteratori",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160304.operacijaPomocuIteratora.z01.spajanje.PokretanjeOperacijeSpajanjaIteratori",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeLinkedListSortiranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160000.koriscenjeKolekcije.z03.sortiranje.PokretanjeLinkedListSortiranje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeLinkedList",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160000.koriscenjeKolekcije.z02.povezanaLista.PokretanjeLinkedList",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeArrayList",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160000.koriscenjeKolekcije.z01.nizovnaLista.PokretanjeArrayList",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeObradaZabeleski",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z150500.ispitivanjeZabeleski.z01.opisVerzija.PokretanjeObradaZabeleski",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksijaPerformase",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140900.ogranicenja.z01.performanse.PokretanjeRefleksijaPerformase",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksijaKeriranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140700.kreiranje.z01.konstruktor.PokretanjeRefleksijaKeriranje",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksijaPozivMetoda",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140600.metodPristup.z02.pokazivacNaMetod.PokretanjeRefleksijaPozivMetoda",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksijaPostavljanjeCItanjePolja",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140500.poljePristup.z01.citanjePisanje.PokretanjeRefleksijaPostavljanjeCItanjePolja",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectAnalyzerTest",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140200.ispitivanjeTipa.z06.analizaObjekta.ObjectAnalyzerTest",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140200.ispitivanjeTipa.z05.klasaPolje.PokretanjeRefleksija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140200.ispitivanjeTipa.z04.klasaPolje.PokretanjeRefleksija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRefleksija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140200.ispitivanjeTipa.z02.klasaPolje.PokretanjeRefleksija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeKutija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130601.genericiKloniranje.z02.kutijaMutabilnost.PokretanjeKutija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeKutija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130601.genericiKloniranje.z01.kutijaMutabilnost.PokretanjeKutija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjePovezanaLista",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130501.strukturisanjePodataka.z04.listaGenericki.PokretanjePovezanaLista",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PairTest2",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130500a.generickiMetod.z05.minMax.PairTest2",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch PokretanjeSet",
             "request": "launch",
             "mainClass": "rs.math.oop1.z160503.skupovi.z01.hesSkup.PokretanjeSet",

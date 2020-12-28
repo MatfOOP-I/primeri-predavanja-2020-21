@@ -7,6 +7,7 @@ import java.lang.reflect.Modifier;
 import java.util.Scanner;
 
 public class PokretanjeRefleksija {
+
    public static void printFields(Class<?> cl) {
       Field[] fields = cl.getDeclaredFields();
       for (Field f : fields) {
@@ -42,7 +43,6 @@ public class PokretanjeRefleksija {
 
    public static void printMethods(Class<?> cl) {
       Method[] methods = cl.getDeclaredMethods();
-
       for (Method m : methods) {
          Class<?> retType = m.getReturnType();
          String ime = m.getName();
@@ -87,8 +87,7 @@ public class PokretanjeRefleksija {
          Class<?>[] interfaces = klasa.getInterfaces();
          System.out.println((interfaces.length > 0) ? " implements " : "");
          for (int i = 0; i < interfaces.length; ++i) {
-            System.out.println(interfaces[i].getName()
-                  + ((i != interfaces.length - 1) ? ", " : ""));
+            System.out.println(interfaces[i].getName() + ((i != interfaces.length - 1) ? ", " : ""));
          }
          System.out.print("\n{\n");
          printFields(klasa);

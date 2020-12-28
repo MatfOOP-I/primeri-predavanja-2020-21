@@ -12,6 +12,7 @@ public class PokretanjeGenerickiMetod {
             for (E element : c)
                 if (element == null)
                     return true;
+            return false;
         }
         for (E element : c)
             if (element.equals(obj))

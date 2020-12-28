@@ -4,27 +4,30 @@ import java.util.*;
 
 public class PokretanjeOperacijeSpajanjaIteratori {
     public static void main(String[] args) {
-        List<String> a = new LinkedList<String>();
+        List<String> a = new LinkedList<>();
         a.add("Erica");
         a.add("Amy");
         a.add("Carl");
         a.add(2, "Bob");
         a.add("Damir");
         System.out.println(a);
+        System.out.println("---");
 
-        List<String> b = new ArrayList<String>();
+        List<String> b = new ArrayList<>();
         b.add("Bob");
         b.add("Doug");
         b.add("Frances");
         b.add("Gloria");
         System.out.println(b);
+        System.out.println("---");
 
         // kreiranje jedne kolekcije na osnovu druge
-        List<String> bb = new LinkedList<>(b);
+        Collection<String> bb = new LinkedList<>(b);
         System.out.println(bb);
+        System.out.println("---");
 
         // spajanje dve kolekcije - na kraj a se nalepljuje b
-        List<String> aa = new ArrayList<String>(a);
+        List<String> aa = new ArrayList<>(a);
         ListIterator<String> aaIter = aa.listIterator();
         while (aaIter.hasNext())
             aaIter.next();
@@ -33,6 +36,7 @@ public class PokretanjeOperacijeSpajanjaIteratori {
             aaIter.add(bbIter.next());
         }
         System.out.println(aa);
+        System.out.println("---");
 
         // spajanje dve kolekcije - na a se nalepljuje b naizmenicno
         ListIterator<String> aIter = a.listIterator();
@@ -43,6 +47,7 @@ public class PokretanjeOperacijeSpajanjaIteratori {
             aIter.add(bIter.next());
         }
         System.out.println(a);
+        System.out.println("---");
 
     }
 }

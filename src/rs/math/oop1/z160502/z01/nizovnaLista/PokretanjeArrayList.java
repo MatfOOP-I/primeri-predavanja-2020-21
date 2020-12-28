@@ -61,7 +61,7 @@ public class PokretanjeArrayList
 	public static void main( String[] args )
 	{
 		// fill the osoblje array list with three Zaposleni objects
-		Collection<Zaposleni> osoblje = new ArrayList<Zaposleni>();
+		Collection<Zaposleni> osoblje = new ArrayList<>();
 		
 		osoblje.add( new Zaposleni( "Janko Jankovic", 75000, 1987, 12, 15 ) );
 		osoblje.add( new Zaposleni( "Marko Markovic", 50000, 1989, 10, 1 ) );

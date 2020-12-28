@@ -42,9 +42,9 @@ public class PokretanjeObradaZabeleski
 			Description anotDescMet = m.getAnnotation( Description.class );
 			System.out.println( "Author of the method: " + anotDescMet.author() );
 			System.out.println( "Date of Writing the method: " + anotDescMet.date() );
-			Version anotVer2 = m.getAnnotation( Version.class );
-			System.out.println( "Version of the method: " + anotVer2.majorVersion()
-					+ "." + anotVer2.minorVersion() );
+			Version anotVerMet = m.getAnnotation( Version.class );
+			System.out.println( "Version of the method: " + anotVerMet.majorVersion()
+					+ "." + anotVerMet.minorVersion() );
 		}
 		catch (NoSuchMethodException ex)
 		{

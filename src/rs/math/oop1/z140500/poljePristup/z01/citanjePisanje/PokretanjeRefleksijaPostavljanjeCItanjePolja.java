@@ -20,6 +20,8 @@ public class PokretanjeRefleksijaPostavljanjeCItanjePolja
 			System.out.println( prvoDeklarisanoPolje.get( drugi ) );
 			prvoDeklarisanoPolje.set( prvi, "Mini Maus" );
 			System.out.println( prvi + ",\r\n" + drugi );
+			prvoDeklarisanoPolje.set(drugi, "Pata Patak");
+			System.out.println(prvi + ",\r\n" + drugi);
 		}
 		catch (IllegalArgumentException | IllegalAccessException e)
 		{

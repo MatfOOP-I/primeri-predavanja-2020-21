@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PokretanjeLinkedList {
     public static void main(String[] args) {
-        List<String> a = new LinkedList<String>();
+        List<String> a = new LinkedList<>();
         a.add("Erica");
         a.add("Amy");
         a.add("Carl");

@@ -8,15 +8,17 @@ public class PokretanjeKutija
 	{
 		Student pera = new Student("Petar", "Petrovic");
 		Kutija<Student> kutija = new Kutija<>(pera);
-		System.out.println( kutija );
-		pera.setIme( "Mitar" );
-		System.out.println( kutija );
-
 		Kutija<Student> kutija2 = new Kutija<>(pera);
-		kutija2.get().setIme( "Žika" );
-		System.out.println( kutija + ", " + kutija2);
-		
-		
+		System.out.println(kutija + ", " + kutija2);
+
+		pera.setIme( "Zarko" );
+		System.out.println(kutija + ", " + kutija2);
+
+		kutija2.getUKutiji().setIme( "Mitar" );
+		System.out.println(kutija + ", " + kutija2);
+
+		kutija.getUKutiji().setPrezime("Mitrovic");
+		System.out.println(kutija + ", " + kutija2);
 	}
 	
 }

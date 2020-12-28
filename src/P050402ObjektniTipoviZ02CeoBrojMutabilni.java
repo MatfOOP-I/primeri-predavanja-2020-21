@@ -1,10 +1,10 @@
 
-class CeoBroj3 {
+class P050402ObjektniTipoviZ02CeoBrojMutabilni {
     // вредност датог целог броја
     int vrednostBroja;
 
     // конструктор
-    CeoBroj3(int vrednost) {
+    P050402ObjektniTipoviZ02CeoBrojMutabilni(int vrednost) {
 
         vrednostBroja = vrednost;
     }
@@ -20,23 +20,23 @@ class CeoBroj3 {
         vrednostBroja = -vrednostBroja;
     }
 
-    void uvecajSeZa(CeoBroj3 sabirak) {
+    void uvecajSeZa(P050402ObjektniTipoviZ02CeoBrojMutabilni sabirak) {
         vrednostBroja += sabirak.vrednostBroja;
     }
 
-    void umanjiSeZa(CeoBroj3 umanjilac) {
+    void umanjiSeZa(P050402ObjektniTipoviZ02CeoBrojMutabilni umanjilac) {
         vrednostBroja -= umanjilac.vrednostBroja;
     }
 
-    boolean manjiOd(CeoBroj3 drugi) {
+    boolean manjiOd(P050402ObjektniTipoviZ02CeoBrojMutabilni drugi) {
         return vrednostBroja < drugi.vrednostBroja;
     }
 
-    boolean jednakSa(CeoBroj3 drugi) {
+    boolean jednakSa(P050402ObjektniTipoviZ02CeoBrojMutabilni drugi) {
         return vrednostBroja == drugi.vrednostBroja;
     }
 
-    boolean manjiIliJednakOd(CeoBroj3 drugi) {
+    boolean manjiIliJednakOd(P050402ObjektniTipoviZ02CeoBrojMutabilni drugi) {
         return manjiOd(drugi) || jednakSa(drugi);
     }
 
@@ -46,10 +46,10 @@ class PokretanjeCeoBroj3 {
     // улазна тачка програма
     public static void main(String[] args) {
 
-        CeoBroj3 jedan = new CeoBroj3(1);
-        CeoBroj3 i = new CeoBroj3(1);
-        CeoBroj3 n = new CeoBroj3(1000);
-        CeoBroj3 suma = new CeoBroj3(0);
+        P050402ObjektniTipoviZ02CeoBrojMutabilni jedan = new P050402ObjektniTipoviZ02CeoBrojMutabilni(1);
+        P050402ObjektniTipoviZ02CeoBrojMutabilni i = new P050402ObjektniTipoviZ02CeoBrojMutabilni(1);
+        P050402ObjektniTipoviZ02CeoBrojMutabilni n = new P050402ObjektniTipoviZ02CeoBrojMutabilni(1000);
+        P050402ObjektniTipoviZ02CeoBrojMutabilni suma = new P050402ObjektniTipoviZ02CeoBrojMutabilni(0);
         while (i.manjiIliJednakOd(n)) {
             suma.uvecajSeZa(i);
             i.uvecajSeZa(jedan);

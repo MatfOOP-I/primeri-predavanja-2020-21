@@ -28,10 +28,15 @@ public class PokretanjeRefleksija
 	
 	public static void main( String[] argumenti )
 	{
-		showMethods( new Student( "Miloš", "Mitrović" ) );
-		showMethods( "miki maus" );
+		showMethods(new Student("Miloš", "Mitrović"));
+		System.out.println("---");
+		showMethods("miki maus");
+		System.out.println("---");
 		showMethods( 12 );
-		showMethods( 12.45 );
+		System.out.println("---");
+		showMethods(12.45);
+		System.out.println("---");
+
 	}
 	
 }

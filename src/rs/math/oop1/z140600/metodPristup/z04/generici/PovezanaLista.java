@@ -1,4 +1,4 @@
-package rs.math.oop1.z130501.strukturisanjePodataka.z04.listaGenericki;
+package rs.math.oop1.z140600.metodPristup.z04.generici;
 
 public class PovezanaLista<T>
 {

@@ -16,7 +16,7 @@ public class Kutija<T extends KloniraSe<T>>
 		}
 	}
 	
-	public void set( T t )
+	public void setUKutiji( T t )
 	{
 		try
 		{
@@ -28,7 +28,7 @@ public class Kutija<T extends KloniraSe<T>>
 		}
 	}
 	
-	public T get()
+	public T getUKutiji()
 	{
 		return uKutiji;
 	}

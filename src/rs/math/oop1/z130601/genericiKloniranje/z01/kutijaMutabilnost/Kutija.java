@@ -9,12 +9,12 @@ public class Kutija<T>
 		uKutiji = t;
 	}
 	
-	public void set( T t )
+	public void setUKutiji( T t )
 	{
 		uKutiji = t;
 	}
 	
-	public T get()
+	public T getUKutiji()
 	{
 		return uKutiji;
 	}

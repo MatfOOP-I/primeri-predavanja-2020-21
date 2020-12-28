@@ -4,11 +4,11 @@ import java.util.*;
 
 public class PokretanjeLinkedList {
     public static void main(String[] args) {
-        List<String> a = new LinkedList<String>();
+        Collection<String> a = new LinkedList<>();
         a.add("Ana");
         a.add("Boris");
         a.add("Cica");
-        a.add( "Damir");
+        a.add("Damir");
         a.add("Emil");
         System.out.println(a);
     }
