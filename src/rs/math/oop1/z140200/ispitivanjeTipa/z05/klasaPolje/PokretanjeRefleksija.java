@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Scanner;
 
-public class ReflectionTest3 {
+public class PokretanjeRefleksija {
    public static void printFields(Class<?> cl) {
       Field[] fields = cl.getDeclaredFields();
       for (Field f : fields) {

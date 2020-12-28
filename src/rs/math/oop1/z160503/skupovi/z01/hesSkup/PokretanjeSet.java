@@ -3,7 +3,7 @@ package rs.math.oop1.z160503.skupovi.z01.hesSkup;
 import java.util.*;
 
 
-public class SetTest
+public class PokretanjeSet
 {
    public static void main(String[] args)
    {

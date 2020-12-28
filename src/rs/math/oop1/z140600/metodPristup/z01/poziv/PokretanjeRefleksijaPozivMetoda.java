@@ -3,7 +3,7 @@ package rs.math.oop1.z140600.metodPristup.z01.poziv;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class MethodInvokeTest {
+public class PokretanjeRefleksijaPozivMetoda {
 
     public static void main(String[] args) {
         Zaposleni zap1 = new Zaposleni("Mika", 1000);

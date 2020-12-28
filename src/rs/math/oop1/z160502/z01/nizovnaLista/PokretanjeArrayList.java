@@ -9,6 +9,7 @@ class Zaposleni
 {
 	private String ime;
 	private double plata;
+	// treba LocalDate!!!
 	private Date hireDay;
 	
 	public Zaposleni( String n, double s, int godina, int mesec, int dan )
@@ -54,7 +55,7 @@ class Zaposleni
 	}
 }
 
-public class ArrayListTest
+public class PokretanjeArrayList
 {
 	
 	public static void main( String[] args )

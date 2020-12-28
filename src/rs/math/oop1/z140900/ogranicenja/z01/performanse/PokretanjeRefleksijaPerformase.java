@@ -2,7 +2,7 @@ package rs.math.oop1.z140900.ogranicenja.z01.performanse;
 
 import java.lang.reflect.Array;
 
-public class ArraySimpleTest
+public class PokretanjeRefleksijaPerformase
 {
 	public static void main( String[] argumenti )
 	{

@@ -45,7 +45,7 @@ class TraceHandler implements InvocationHandler {
 }
 
 
-public class ProxyTest {
+public class PokretanjeRefleksijaProksi {
    public static void main(String[] args) {
       Object[] elements = new Object[1000];
 

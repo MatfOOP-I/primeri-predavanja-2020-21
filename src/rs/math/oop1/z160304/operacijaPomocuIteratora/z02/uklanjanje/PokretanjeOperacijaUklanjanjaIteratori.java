@@ -2,7 +2,7 @@ package rs.math.oop1.z160304.operacijaPomocuIteratora.z02.uklanjanje;
 
 import java.util.*;
 
-public class LinkedListTest {
+public class PokretanjeOperacijaUklanjanjaIteratori {
     public static void main(String[] args) {
         List<String> a = new LinkedList<String>();
         a.add("Erica");

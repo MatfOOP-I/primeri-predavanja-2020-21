@@ -2,7 +2,7 @@ package rs.math.oop1.z140200.ispitivanjeTipa.z06.analizaObjekta;
 
 import java.util.Scanner;
 
-public class TrraverseClassInfo {
+public class PokretanjeRefleksijaNasledjivanja {
 
     public static void main(String[] args)
     {

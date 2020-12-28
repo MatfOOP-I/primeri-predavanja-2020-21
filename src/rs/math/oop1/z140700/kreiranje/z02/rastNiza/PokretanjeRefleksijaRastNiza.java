@@ -8,7 +8,7 @@ import java.lang.reflect.Array;
  * @author Cay Horstmann
  * @version 1.01 2004-02-21
  */
-public class ArrayGrowTest {
+public class PokretanjeRefleksijaRastNiza {
    /**
     * This method attempts to grow an array by allocating a new array and copying
     * all elements.

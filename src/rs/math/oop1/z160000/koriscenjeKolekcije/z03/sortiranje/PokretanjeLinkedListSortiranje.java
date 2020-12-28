@@ -2,7 +2,7 @@ package rs.math.oop1.z160000.koriscenjeKolekcije.z03.sortiranje;
 
 import java.util.*;
 
-public class LinkedListTest {
+public class PokretanjeLinkedListSortiranje {
     public static void main(String[] args) {
         List<String> a = new LinkedList<String>();
         a.add("Erica");

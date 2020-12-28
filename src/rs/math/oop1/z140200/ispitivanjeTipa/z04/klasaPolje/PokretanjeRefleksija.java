@@ -2,7 +2,7 @@ package rs.math.oop1.z140200.ispitivanjeTipa.z04.klasaPolje;
 
 import java.lang.reflect.Method;
 
-public class ReflectionTest2
+public class PokretanjeRefleksija
 {
 	static void showMethods( Object o )
 	{
@@ -13,11 +13,11 @@ public class ReflectionTest2
 		for( int i = 0; i < metodi.length; i++ )
 		{
 			String imeMetoda = metodi[i].getName();
-			System.out.println( "Name: " + imeMetoda );
-			System.out.println( " Return Type: "
+			System.out.println( "Naziv: " + imeMetoda );
+			System.out.println( " Povratni tip: "
 					+ metodi[i].getReturnType().getName() );
 			Class<?>[] parametriMetoda = metodi[i].getParameterTypes();
-			System.out.print( " Parameter Types:" );
+			System.out.print( " Tipovi parametara:" );
 			for( int k = 0; k < parametriMetoda.length; k++ )
 			{
 				System.out.print( " " + parametriMetoda[k].getName() );

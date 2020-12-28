@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListTest {
+public class PokretanjeLinkedList {
     public static void main(String[] args) {
         List<String> a = new LinkedList<String>();
         a.add("Erica");

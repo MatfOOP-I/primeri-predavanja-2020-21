@@ -7,7 +7,7 @@ import java.util.*;
  * @version 1.10 2004-08-02
  * @author Cay Horstmann
  */
-public class ShuffleTest
+public class PokretanjeMesanje
 {
    public static void main(String[] args)
    {

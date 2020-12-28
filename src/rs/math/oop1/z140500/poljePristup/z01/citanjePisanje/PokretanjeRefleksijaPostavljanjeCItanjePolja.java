@@ -2,7 +2,7 @@ package rs.math.oop1.z140500.poljePristup.z01.citanjePisanje;
 
 import java.lang.reflect.Field;
 
-public class FieldGetSetTest
+public class PokretanjeRefleksijaPostavljanjeCItanjePolja
 {
 	public static void main( String[] argumenti )
 	{

@@ -2,7 +2,7 @@ package rs.math.oop1.z140600.metodPristup.z02.pokazivacNaMetod;
 
 import java.lang.reflect.*;
 
-public class MethodPointerTest {
+public class PokretanjeRefleksijaPozivMetoda {
 
     public static double kvadrat(double x) {
         return x * x;
@@ -27,7 +27,7 @@ public class MethodPointerTest {
     }
 
     public static void main(String[] args) throws Exception {
-        Method square = MethodPointerTest.class.getMethod("kvadrat",
+        Method square = PokretanjeRefleksijaPozivMetoda.class.getMethod("kvadrat",
                 double.class);
         System.out.println("------------------------------");
         printTable(-5, 5, 50, square);
@@ -37,7 +37,7 @@ public class MethodPointerTest {
         Method sin = Math.class.getMethod("sin", double.class);
         System.out.println("------------------------------");
         printTable(1, 10, 50, sin);
-        Method nesto = MethodPointerTest.class.getMethod("eNaXminus3",
+        Method nesto = PokretanjeRefleksijaPozivMetoda.class.getMethod("eNaXminus3",
                 double.class);
         System.out.println("------------------------------");
         printTable(-5, 5, 50, nesto);

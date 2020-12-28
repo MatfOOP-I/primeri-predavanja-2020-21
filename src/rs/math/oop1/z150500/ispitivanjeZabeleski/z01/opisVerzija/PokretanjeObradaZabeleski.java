@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 //Applying annotation to the class
 @Description( author = "Mitar", date = "1.4.2016" )
 @Version( minorVersion = 6 )
-public class Test
+public class PokretanjeObradaZabeleski
 {
 	// Applying annotation to the method
 	@Description( date = "aprli li li li" )
@@ -25,7 +25,7 @@ public class Test
 	
 	public static void showAnnotations()
 	{
-		Test test = new Test();
+		PokretanjeObradaZabeleski test = new PokretanjeObradaZabeleski();
 		try
 		{
 			Class<?> c = test.getClass();

@@ -2,7 +2,7 @@ package rs.math.oop1.z160304.operacijaPomocuIteratora.z01.spajanje;
 
 import java.util.*;
 
-public class LinkedListTest {
+public class PokretanjeOperacijeSpajanjaIteratori {
     public static void main(String[] args) {
         List<String> a = new LinkedList<String>();
         a.add("Erica");
