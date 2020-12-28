@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 
-public class Generic {
+public class PokretanjeGenerickiMetod {
 
     public static <E> boolean contains(Collection<E> c, Object obj) {
         if (obj == null) {

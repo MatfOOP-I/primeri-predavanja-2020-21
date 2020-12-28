@@ -1,4 +1,4 @@
-package rs.math.oop1.z160903.generickiMetodi.z03;
+package rs.math.oop1.z160903.generickiMetodi.z03.generickiPretragaPrikaz;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

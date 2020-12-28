@@ -7,7 +7,7 @@ import java.util.*;
  * @version 1.00 2004-08-03
  * @author Cay Horstmann
  */
-public class PriorityQueueTest
+public class PokretanjePriorityQueuet
 {
    public static void main(String[] args)
    {

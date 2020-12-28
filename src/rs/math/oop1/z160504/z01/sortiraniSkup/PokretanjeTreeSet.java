@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * This program sorts a set of item by comparing their descriptions.
  */
-public class TreeSetTest
+public class PokretanjeTreeSet
 {
 	public static void main( String[] args )
 	{

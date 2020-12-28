@@ -2,7 +2,7 @@ package rs.math.oop1.z160903.generickiMetodi.z02.osobePretragaPrikaz;
 
 import java.util.List;
 
-public class OsobePretraga01MetodiPokretanje {
+public class PokretanjeOsobePretraga01Metodi {
     
     static void prikaziOsobeStarijeOd(List<Osoba> osobe, int uzrast) {
         for (Osoba o : osobe) {

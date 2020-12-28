@@ -2,7 +2,7 @@ package rs.math.oop1.z160801.z01.hesKatalog;
 
 import java.util.*;
 
-public class MapTest
+public class PokretanjeMap
 {
    public static void main(String[] args)
    {

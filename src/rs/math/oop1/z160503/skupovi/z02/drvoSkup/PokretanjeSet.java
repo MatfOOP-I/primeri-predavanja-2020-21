@@ -7,7 +7,7 @@ import java.util.*;
  * @version 1.10 2003-08-02
  * @author Cay Horstmann
  */
-public class SetTest
+public class PokretanjeSet
 {
    public static void main(String[] args)
    {

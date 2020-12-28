@@ -2,7 +2,7 @@ package rs.math.oop1.z160903.generickiMetodi.z02.osobePretragaPrikaz;
 
 import java.util.List;
 
-public class OsobePretraga04AnonimnaKlasaPokretanje {
+public class PokretanjeOsobePretraga04AnonimnaKlasa {
 
     public static void prikazi(List<Osoba> osobe, KriterijumPretrageOsoba kriterijum) {
         for (Osoba o : osobe) {

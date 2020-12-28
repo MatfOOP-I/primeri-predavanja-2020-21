@@ -2,7 +2,7 @@ package rs.math.oop1.z160903.generickiMetodi.z02.osobePretragaPrikaz;
 
 import java.util.List;
 
-public class OsobePretraga02UgnjezdenaKlasaPokretanje {
+public class PokretanjeOsobePretraga02UgnjezdenaKlasa {
 
     public static void prikazi(List<Osoba> osobe, KriterijumPretrageOsoba kriterijum) {
         for (Osoba o : osobe) {
@@ -67,17 +67,17 @@ public class OsobePretraga02UgnjezdenaKlasaPokretanje {
         for (Osoba o : Osoba.LIKOVI_CRTANI)
             o.prikazi();
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new OsobePretraga02UgnjezdenaKlasaPokretanje.ProveriOsobaStarijeOd(50));
+        prikazi(Osoba.LIKOVI_CRTANI, new PokretanjeOsobePretraga02UgnjezdenaKlasa.ProveriOsobaStarijeOd(50));
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new OsobePretraga02UgnjezdenaKlasaPokretanje.ProveriOsobaStarijeOd(80));
+        prikazi(Osoba.LIKOVI_CRTANI, new PokretanjeOsobePretraga02UgnjezdenaKlasa.ProveriOsobaStarijeOd(80));
         System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI, new OsobePretraga02UgnjezdenaKlasaPokretanje.ProveriOsobaUzrastaIzmedju(80, 85));
-        System.out.println("---");
-        prikazi(Osoba.LIKOVI_CRTANI,
-                new OsobePretraga02UgnjezdenaKlasaPokretanje.ProveriOsobaEmailAdresaSadrzi("disney"));
+        prikazi(Osoba.LIKOVI_CRTANI, new PokretanjeOsobePretraga02UgnjezdenaKlasa.ProveriOsobaUzrastaIzmedju(80, 85));
         System.out.println("---");
         prikazi(Osoba.LIKOVI_CRTANI,
-                new OsobePretraga02UgnjezdenaKlasaPokretanje.ProveriOsobaDatogPolaSaEmailAdresomKojaSadrzi(Osoba.Pol.ZENA,
+                new PokretanjeOsobePretraga02UgnjezdenaKlasa.ProveriOsobaEmailAdresaSadrzi("disney"));
+        System.out.println("---");
+        prikazi(Osoba.LIKOVI_CRTANI,
+                new PokretanjeOsobePretraga02UgnjezdenaKlasa.ProveriOsobaDatogPolaSaEmailAdresomKojaSadrzi(Osoba.Pol.ZENA,
                         "disney"));
         System.out.println("---");
     }

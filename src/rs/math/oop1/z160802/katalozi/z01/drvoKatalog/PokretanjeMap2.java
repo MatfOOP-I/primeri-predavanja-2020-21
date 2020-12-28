@@ -3,7 +3,7 @@ package rs.math.oop1.z160802.katalozi.z01.drvoKatalog;
 import java.util.*;
 import java.util.Map.Entry;
 
-public class MapTest2 {
+public class PokretanjeMap2 {
     public static void main(String[] args) {
         SortedMap<String, Employee2> osoblje = new TreeMap<>();
         osoblje.put("927-25-5464-0", new Employee2("Miki Maus", 10));

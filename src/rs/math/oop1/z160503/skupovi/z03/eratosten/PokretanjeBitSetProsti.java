@@ -2,7 +2,7 @@ package rs.math.oop1.z160503.skupovi.z03.eratosten;
 
 import java.util.*;
 
-public class Sieve
+public class PokretanjeBitSetProsti
 {
    public static void main(String[] s)
    {
