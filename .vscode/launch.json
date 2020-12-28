@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PokretanjeRefleksija",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z140200.ispitivanjeTipa.z01.klasaPolje.PokretanjeRefleksija",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeSamorastuciNiz",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z130501.strukturisanjePodataka.z01.samorastuciNiz.PokretanjeSamorastuciNiz",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRed",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160904.noviKolekcijskiTipovi.z03.redPrekoPovezaneListe.PokretanjeRed",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokretanjeRed",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160904.noviKolekcijskiTipovi.z02.redPrekoKruznogNiza.PokretanjeRed",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch StackTest2",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160904.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe.StackTest2",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
+            "name": "Launch StackTest",
+            "request": "launch",
+            "mainClass": "rs.math.oop1.z160904.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe.StackTest",
+            "projectName": "MatfOOP-I----primeri-predavanja-2020-21_a06c0cf9"
+        },
+        {
+            "type": "java",
             "name": "Launch PokretanjeTryCatch07Block",
             "request": "launch",
             "mainClass": "rs.math.oop1.z110102.rukovanjeIzuzecima.z05.metodiBlokovi.PokretanjeTryCatch07Block",

@@ -1,10 +1,12 @@
-package rs.math.oop1.z160904.noviKolekcijskiTipovi.z03.redPrekoPovezaneListe;
+package rs.math.oop1.z200404.noviKolekcijskiTipovi.z03.redPrekoPovezaneListe;
 
 import java.util.AbstractQueue;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 
 public class RedPrekoPovezaneListe<T> extends AbstractQueue<T> {
+	private int indikatorModifikacije = 0;
+
 	private class ElemenatListe {
 		private ElemenatListe sledeci; // Refers to next item in the list
 		private T vrednost;
@@ -28,10 +30,13 @@ public class RedPrekoPovezaneListe<T> extends AbstractQueue<T> {
 
 		public PovezanaListaIterator(ElemenatListe el) {
 			tekuci = el;
+			this.indikatorModifikacije = RedPrekoPovezaneListe.this.indikatorModifikacije;
 		}
 
 		@Override
 		public boolean hasNext() {
+			if (this.indikatorModifikacije != RedPrekoPovezaneListe.this.indikatorModifikacije)
+				throw new ConcurrentModificationException();
 			return tekuci != null;
 		}
 
@@ -60,6 +65,7 @@ public class RedPrekoPovezaneListe<T> extends AbstractQueue<T> {
 			rep.sledeci = el;
 			rep = el;
 		}
+		indikatorModifikacije++;
 		return true;
 	}
 
@@ -71,6 +77,7 @@ public class RedPrekoPovezaneListe<T> extends AbstractQueue<T> {
 		glava = glava.sledeci;
 		if (glava == null)
 			rep = null;
+		indikatorModifikacije++;
 		return el.vrednost;
 	}
 

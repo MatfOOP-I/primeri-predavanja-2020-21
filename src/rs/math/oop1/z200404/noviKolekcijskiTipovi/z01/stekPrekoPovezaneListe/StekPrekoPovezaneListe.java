@@ -1,10 +1,12 @@
-package rs.math.oop1.z160904.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe;
+package rs.math.oop1.z200404.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe;
 
 import java.util.*;
 
 
 public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         implements Stack<E> {
+    int indikatorPromeneStrukture = 0;
+
     private class ElemenatListe {
         private ElemenatListe sledeci; // Refers to next item in the list
         private E vrednost;
@@ -25,19 +27,27 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
     private ElemenatListe glava = null;
 
     private class IteratorSteka<E> implements Iterator<E> {
+        private int indikatorPromeneStrukture;
         private ElemenatListe tekuci;
 
-        public IteratorSteka() {
+        public IteratorSteka(int indikatorPromeneStrukture) {
+            this.indikatorPromeneStrukture = indikatorPromeneStrukture;
             tekuci = glava;
         }
 
         @Override
         public boolean hasNext() {
+            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
+                throw new ConcurrentModificationException();
+            }
             return tekuci != null;
         }
 
         @Override
         public E next() {
+            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
+                throw new ConcurrentModificationException();
+            }
             E vrednost = (E) tekuci.vrednost;
             tekuci = tekuci.sledeci;
             return vrednost;
@@ -81,7 +91,7 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
 
     @Override
     public Iterator<E> iterator() {
-        return new IteratorSteka<E>();
+        return new IteratorSteka<E>(indikatorPromeneStrukture);
     }
 
     @Override
@@ -98,6 +108,7 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
     @Override
     public void push(E elem) {
         addItem(elem);
+        indikatorPromeneStrukture++;
     }
 
     @Override
@@ -113,7 +124,9 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         } catch (Exception e) {
             System.out.println(e);
         }
+        indikatorPromeneStrukture++;
         return ret;
     }
+
 
 }

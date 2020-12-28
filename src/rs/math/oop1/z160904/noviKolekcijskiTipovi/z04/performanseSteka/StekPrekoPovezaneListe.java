@@ -5,7 +5,6 @@ import java.util.*;
 
 public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         implements Stack<E> {
-    int indikatorPromeneStrukture = 0;
 
     private class ElemenatListe {
         private ElemenatListe sledeci; // Refers to next item in the list
@@ -27,34 +26,24 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
     private ElemenatListe glava = null;
 
     private class IteratorSteka<E> implements Iterator<E> {
-        private int indikatorPromeneStrukture;
         private ElemenatListe tekuci;
 
-        public IteratorSteka(int indikatorPromeneStrukture) {
-            this.indikatorPromeneStrukture = indikatorPromeneStrukture;
+        public IteratorSteka() {
             tekuci = glava;
         }
 
         @Override
         public boolean hasNext() {
-            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
-                throw new ConcurrentModificationException();
-            }
             return tekuci != null;
         }
 
         @Override
         public E next() {
-            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
-                throw new ConcurrentModificationException();
-            }
             E vrednost = (E) tekuci.vrednost;
             tekuci = tekuci.sledeci;
             return vrednost;
         }
     }
-
-    ;
 
     private void addItem(E elem) {
         if (glava == null) {
@@ -91,7 +80,7 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
 
     @Override
     public Iterator<E> iterator() {
-        return new IteratorSteka<E>(indikatorPromeneStrukture);
+        return new IteratorSteka<E>();
     }
 
     @Override

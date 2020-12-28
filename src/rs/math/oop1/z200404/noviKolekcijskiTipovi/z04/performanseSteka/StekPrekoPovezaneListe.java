@@ -1,10 +1,12 @@
-package rs.math.oop1.z160904.noviKolekcijskiTipovi.z01.stekPrekoPovezaneListe;
+package rs.math.oop1.z200404.noviKolekcijskiTipovi.z04.performanseSteka;
 
 import java.util.*;
 
 
 public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         implements Stack<E> {
+    int indikatorPromeneStrukture = 0;
+
     private class ElemenatListe {
         private ElemenatListe sledeci; // Refers to next item in the list
         private E vrednost;
@@ -25,24 +27,34 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
     private ElemenatListe glava = null;
 
     private class IteratorSteka<E> implements Iterator<E> {
+        private int indikatorPromeneStrukture;
         private ElemenatListe tekuci;
 
-        public IteratorSteka() {
+        public IteratorSteka(int indikatorPromeneStrukture) {
+            this.indikatorPromeneStrukture = indikatorPromeneStrukture;
             tekuci = glava;
         }
 
         @Override
         public boolean hasNext() {
+            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
+                throw new ConcurrentModificationException();
+            }
             return tekuci != null;
         }
 
         @Override
         public E next() {
+            if (indikatorPromeneStrukture != StekPrekoPovezaneListe.this.indikatorPromeneStrukture) {
+                throw new ConcurrentModificationException();
+            }
             E vrednost = (E) tekuci.vrednost;
             tekuci = tekuci.sledeci;
             return vrednost;
         }
     }
+
+    ;
 
     private void addItem(E elem) {
         if (glava == null) {
@@ -54,12 +66,6 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         glava = e;
     }
 
-    @Override
-    public boolean add(E elem){
-        addItem(elem);
-        return true;
-    }
-
     private E removeItem() throws Exception {
         if (glava == null) {
             throw new Exception("Kolekecija je prazna");
@@ -69,8 +75,12 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
         return e.vrednost;
     }
 
-    public StekPrekoPovezaneListe(){}
+    public boolean empty() {
+        return (glava == null);
+    }
 
+    public StekPrekoPovezaneListe() {
+    }
 
     public StekPrekoPovezaneListe(Collection<E> c) {
         Iterator<E> it = c.iterator();
@@ -81,7 +91,7 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
 
     @Override
     public Iterator<E> iterator() {
-        return new IteratorSteka<E>();
+        return new IteratorSteka<E>(indikatorPromeneStrukture);
     }
 
     @Override
@@ -101,12 +111,22 @@ public class StekPrekoPovezaneListe<E> extends AbstractCollection<E>
     }
 
     @Override
-    public E peek() {
-        return glava.vrednost;
+    public E peek() throws EmptyStackException {
+        if (glava == null)
+            throw new EmptyStackException();
+        E ret = null;
+        try {
+            ret = glava.vrednost;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return ret;
     }
 
     @Override
-    public E pop() {
+    public E pop() throws EmptyStackException {
+        if (glava == null)
+            throw new EmptyStackException();
         E ret = null;
         try {
             ret = removeItem();

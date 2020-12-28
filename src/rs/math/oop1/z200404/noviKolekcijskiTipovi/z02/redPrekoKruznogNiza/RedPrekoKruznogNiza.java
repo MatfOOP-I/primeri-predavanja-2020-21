@@ -1,4 +1,4 @@
-package rs.math.oop1.z160904.noviKolekcijskiTipovi.z02.redPrekoKruznogNiza;
+package rs.math.oop1.z200404.noviKolekcijskiTipovi.z02.redPrekoKruznogNiza;
 
 import java.util.*;
 
@@ -11,14 +11,17 @@ public class RedPrekoKruznogNiza<E> extends AbstractQueue<E>
 	private int head;
 	private int tail;
 	private int count;
+	private int indikatorPromeneStrukture;
+	
 
 	private class QueueIterator implements Iterator<E>
 	{
 		private int offset;
+		private int indikatorPromene;
 
 		public QueueIterator()
 		{
-			// Podrazumevani konstruktor kreira prazan iterator
+			indikatorPromene = indikatorPromeneStrukture;
 		}
 		
 		public E next()
@@ -32,6 +35,8 @@ public class RedPrekoKruznogNiza<E> extends AbstractQueue<E>
 		
 		public boolean hasNext()
 		{
+			if (indikatorPromeneStrukture != indikatorPromene)
+				throw new ConcurrentModificationException();
 			return offset < count;
 		}
 		
@@ -59,6 +64,7 @@ public class RedPrekoKruznogNiza<E> extends AbstractQueue<E>
 			elements[tail] = newElement;
 			tail = (tail + 1) % elements.length;
 			count++;
+			indikatorPromeneStrukture++;
 			return true;
 		}
 		else
@@ -72,6 +78,7 @@ public class RedPrekoKruznogNiza<E> extends AbstractQueue<E>
 		E r = peek();
 		head = (head + 1) % elements.length;
 		count--;
+		indikatorPromeneStrukture++;
 		return r;
 	}
 	
