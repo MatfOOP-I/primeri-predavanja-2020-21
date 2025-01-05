@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PokretanjeModularnoNzdNzs",
+            "request": "launch",
+            "mainClass": "PokretanjeModularnoNzdNzs",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
+            "name": "PokretanjeProbaI2",
+            "request": "launch",
+            "mainClass": "PokretanjeProbaI2",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
+            "name": "PokretanjeStudent",
+            "request": "launch",
+            "mainClass": "PokretanjeStudent",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
+            "name": "PokretanjeProbaI1",
+            "request": "launch",
+            "mainClass": "PokretanjeProbaI1",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
+            "name": "PokretanjeStrukturnoNzd",
+            "request": "launch",
+            "mainClass": "PokretanjeStrukturnoNzd",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
+            "name": "PokretanjeImperativnoNzd",
+            "request": "launch",
+            "mainClass": "PokretanjeImperativnoNzd",
+            "projectName": "MatfOOP-I--primeri-predavanja-2020-21_fc1e8c99"
+        },
+        {
+            "type": "java",
             "name": "Launch PokretanjeRefleksijaGenerici",
             "request": "launch",
             "mainClass": "rs.math.oop1.z140600.metodPristup.z04.generici.PokretanjeRefleksijaGenerici",
